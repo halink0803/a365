@@ -1,0 +1,725 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pri",
+				"print-all"
+			],
+			[
+				"print",
+				"divToPrint"
+			],
+			[
+				"M-",
+				"M-CHAT-R"
+			],
+			[
+				"in",
+				"inline-table"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"pdf",
+				"pdf2send"
+			],
+			[
+				"onC",
+				"onclick	Attr"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"currne",
+				"current_child"
+			],
+			[
+				"current",
+				"current_child"
+			],
+			[
+				"a365_",
+				"a365_children"
+			],
+			[
+				"calculate",
+				"calculate_adjusted_birth"
+			],
+			[
+				"cur",
+				"current_user"
+			],
+			[
+				"chi",
+				"child_id"
+			],
+			[
+				"num",
+				"num_ans"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"fie",
+				"field_color"
+			],
+			[
+				"mont",
+				"month_test"
+			],
+			[
+				"mo",
+				"month_test"
+			],
+			[
+				"me",
+				"meta	Tag"
+			],
+			[
+				"con",
+				"contact"
+			],
+			[
+				"q",
+				"question"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"user",
+				"user_count"
+			],
+			[
+				"size",
+				"size"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"query",
+				"msql_query"
+			],
+			[
+				"qu",
+				"question"
+			],
+			[
+				"ques",
+				"questions"
+			],
+			[
+				"get_re",
+				"pg_get_result"
+			],
+			[
+				"e",
+				"echo	echo \"…\""
+			],
+			[
+				"a",
+				"array	$… = array (…)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mailer.php",
+			"settings":
+			{
+				"buffer_size": 2207,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "asq_result.php",
+			"settings":
+			{
+				"buffer_size": 18911,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					""
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"All Syntaxes"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Performance"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Regex Compatibility"
+				]
+			],
+			[
+				"Packages/Default/Syntax Tests.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/duongquangvu/A365",
+		"/Users/duongquangvu/A365/a365_plugin",
+		"/Users/duongquangvu/A365/a365_theme",
+		"/Users/duongquangvu/A365/a365_theme/page-templates"
+	],
+	"file_history":
+	[
+		"/Users/duongquangvu/Documents/Documents/summer-school-2016/index.html",
+		"/Users/duongquangvu/A365/a365_plugin/includes/a365-asq-functions.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/asq_result.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/mailer.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/db2excel.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/class-a365-settings.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-config.php",
+		"/Users/duongquangvu/A365/a365_theme/css/style.css",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/m-chat-rf.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/a365-mchatr-functions.php",
+		"/Applications/MAMP/htdocs/mysql_excel/importtest.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/m-chat-rf-result.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/qol_result.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/atec_result.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/atec.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/a365-atec-functions.php",
+		"/Applications/MAMP/htdocs/mysql_excel/db.inc.php",
+		"/Users/duongquangvu/Downloads/database-to-excel/DatabaseToExcel.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/qol_test.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/asq.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/untitled.php",
+		"/Users/duongquangvu/A365/a365_theme/js/script.js",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/M-ChatR.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/M-ChatR-Result.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/manager_test.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/homepage-template.php",
+		"/Users/duongquangvu/A365/a365_theme/manage-children.php",
+		"/Users/duongquangvu/A365/a365_theme/functions.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/send_asq_result_to_email.php",
+		"/Users/duongquangvu/A365/a365_theme/header.php",
+		"/Users/duongquangvu/A365/a365_theme/header-asqresult.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/a365-user-functions.php",
+		"/Users/duongquangvu/A365/a365_theme/style.css",
+		"/Applications/MAMP/htdocs/test/result.php",
+		"/Applications/MAMP/htdocs/test/form.php",
+		"/Applications/MAMP/htdocs/test/test.php",
+		"/Users/duongquangvu/A365/a365_plugin/a365.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/lib/a365_atec_functions.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/QOL.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/send_mail_ASQ.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/fpdf.php",
+		"/Users/duongquangvu/A365/a365_theme/page-templates/html2fpdf.php",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/Controller/StartTestingsController.php",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/Lib/Email/EmailSender.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/a365-core-functions.php",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/StartTestings/manager_begin_test.ctp",
+		"/Users/duongquangvu/Documents/Documents/summer-school-2016/css/slideshow.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school-2016/css/style.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school-2016/images/hthanhtung.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/css/style.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school/css/bootstrap.min.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school/css/bootstrap.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/Untitled.png",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/ntthanh92.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/download.jpeg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/3.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/2.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/1.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/pic03.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/5.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/6.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/6_1.jpg",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/7.jpg",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/StartTestings/manager_result_test.ctp",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/StartTestings/admin_result_test.ctp",
+		"/Users/duongquangvu/A365/a365_plugin/index.php",
+		"/Users/duongquangvu/Documents/Documents/summer-school/js/custom.js",
+		"/Users/duongquangvu/Documents/Documents/summer-school/index.html",
+		"/Users/duongquangvu/Documents/Documents/summer-school/css/slideshow.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school/css/landing-page.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school/images/uet3.jpg",
+		"/Users/duongquangvu/A365/a365_plugin/includes/send_gmail.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/class.phpmailer.php",
+		"/Users/duongquangvu/Downloads/startbootstrap-landing-page-1.0.5/css/bootstrap.css",
+		"/Users/duongquangvu/Documents/Documents/summer-school/css/skel.css",
+		"/Users/duongquangvu/Downloads/Parallax-One/index.php",
+		"/Applications/MAMP/htdocs/laravel/config/app.php",
+		"/Applications/MAMP/htdocs/laravel/resources/views/pages/asq_form.blade.php",
+		"/Applications/MAMP/htdocs/laravel/resources/views/pages/asq.blade.php",
+		"/Applications/MAMP/htdocs/laravel/app/Http/Controllers/ASQController.php",
+		"/Applications/MAMP/htdocs/laravel/app/Http/Controllers/PagesController.php",
+		"/Applications/MAMP/htdocs/laravel/app/Http/routes.php",
+		"/Applications/MAMP/htdocs/laravel/app/Http/Controllers/ContactController.php",
+		"/Applications/MAMP/htdocs/laravel/resources/views/aboutme.blade.php",
+		"/Applications/MAMP/htdocs/laravel/.env",
+		"/Applications/MAMP/htdocs/laravel/app/Http/Controllers/DatabaseController.php",
+		"/Applications/MAMP/htdocs/laravel/app/Articles.php",
+		"/Applications/MAMP/htdocs/laravel/app/User.php",
+		"/Applications/MAMP/htdocs/laravel/database/migrations/2016_06_19_030206_create_articles_table.php",
+		"/Applications/MAMP/htdocs/laravel/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/Applications/MAMP/htdocs/laravel/.env.example",
+		"/Applications/MAMP/htdocs/laravel/config/assets.php",
+		"/Applications/MAMP/htdocs/laravel/app/Components/Assets/Facade/AssetsFacade.php",
+		"/Applications/MAMP/htdocs/laravel/app/Components/Assets/AssetsServiceProvider.php",
+		"/Applications/MAMP/htdocs/laravel/composer.json",
+		"/Applications/MAMP/htdocs/laravel/resources/views/pages/aboutme.blade.php",
+		"/Applications/MAMP/htdocs/laravel/app/Components/Assets/Assets.php",
+		"/Applications/MAMP/htdocs/laravel/resources/assets/sass/app.scss",
+		"/Applications/MAMP/htdocs/laravel/config/mail.php",
+		"/Applications/MAMP/htdocs/laravel/resources/views/pages/contact.php",
+		"/Applications/MAMP/htdocs/laravel/resources/views/pages/about.php",
+		"/Applications/MAMP/htdocs/laravel/app/Http/Controllers/Controller.php",
+		"/Users/duongquangvu/A365/a365_plugin/includes/a365_asq_functions.php",
+		"/Applications/MAMP/htdocs/laravel/public/web.config",
+		"/Applications/MAMP/htdocs/laravel/public/index.php",
+		"/Applications/MAMP/htdocs/laravel/resources/views/welcome.blade.php",
+		"/Users/duongquangvu/Desktop/mysql.php",
+		"/Applications/MAMP/htdocs/laravel/app/Console/Kernel.php",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/AsqResults/admin_index.ctp",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/AsqResults/admin_edit.ctp",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/AsqResults/admin_add.ctp",
+		"/Users/duongquangvu/Downloads/www.a365.vn/composer.json",
+		"/Users/duongquangvu/A365/a365_theme/inc/style1.css",
+		"/Users/duongquangvu/A365/a365_theme/img/btn_luu.png",
+		"/Users/duongquangvu/A365/a365_theme/js/easyTooltip.js",
+		"/Users/duongquangvu/A365/a365_theme/page.php",
+		"/Users/duongquangvu/A365/a365_theme/inc/custom-header.php",
+		"/Users/duongquangvu/A365/a365_theme/404.php",
+		"/Users/duongquangvu/A365/a365_theme/style1.css",
+		"/Users/duongquangvu/A365/a365_theme/single.php",
+		"/Users/duongquangvu/A365/a365_theme/search.php",
+		"/Users/duongquangvu/A365/a365_theme/index.php",
+		"/Users/duongquangvu/A365/a365_plugin/mysql/mysql.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/plugins/mysql/mysql.php",
+		"/Users/duongquangvu/A365/a365_theme/images/btn_exit.png",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/webroot/js/jquery.easy-paging.js",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/Elements/manager/header_test.ctp",
+		"/Users/duongquangvu/Downloads/www.a365.vn/app/View/Elements/manager/left_car.ctp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/duongquangvu/A365",
+			"/Users/duongquangvu/A365/a365_theme/css",
+			"/Users/duongquangvu/A365",
+			"/Users/duongquangvu/Downloads/www.a365.vn",
+			"/Users/duongquangvu/A365",
+			"/Users/duongquangvu/Downloads/www.a365.vn",
+			"/Users/duongquangvu/A365",
+			"/Users/duongquangvu/Downloads/www.a365.vn",
+			"/Users/duongquangvu/Documents/Documents/summer-school-2016",
+			"/Users/duongquangvu/Documents/Documents/summer-school/css",
+			"/Users/duongquangvu/Downloads/www.a365.vn",
+			"/Users/duongquangvu/A365",
+			"/Users/duongquangvu/Downloads/www.a365.vn",
+			"/Users/duongquangvu/Documents/Documents/summer-school",
+			"/Users/duongquangvu/Documents/Documents/summer-school/css",
+			"/Users/duongquangvu/Documents/Documents/summer-school",
+			"/Users/duongquangvu/Downloads/www.a365.vn",
+			"/Users/duongquangvu/Downloads/startbootstrap-landing-page-1.0.5/css",
+			"/Users/duongquangvu/A365",
+			"/Users/duongquangvu/A365/a365_theme",
+			"/Users/duongquangvu/A365/a365_theme/css",
+			"/Users/duongquangvu/Downloads/www.a365.vn",
+			"/Users/duongquangvu/A365/a365_theme/css",
+			"/Users/duongquangvu/A365/a365_theme",
+			"/Users/duongquangvu/A365/a365_theme/css",
+			"/Users/duongquangvu/A365/a365_theme/js",
+			"/Users/duongquangvu/A365/a365_theme/css",
+			"/Users/duongquangvu/A365/a365_theme",
+			"/Users/duongquangvu/A365/a365_theme/css",
+			"/Users/duongquangvu/A365/a365_theme/js",
+			"/Users/duongquangvu/A365/a365_theme/css",
+			"/Users/duongquangvu/A365/a365_theme/js",
+			"/Users/duongquangvu/Downloads/www.a365.vn/app"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ĐĂNG KÝ",
+			"ên tập cho bé các kĩ năng như",
+			"; ",
+			"score",
+			"score_test",
+			"print-all",
+			"encodeURIComponent",
+			"print-all",
+			" // pdf.addHTML($('#print-all')[0], function() {\n        //             //pdf.save('Test.pdf');\n        //             var pdf_send = btoa(pdf.output());\n        //             $.post(\"../send-asq-email/\", {\n        //                 'data': pdf_send,\n        //                 'source' : sOuterHTML,\n        //                 'field': $('#idForm').serialize()\n        //             }, function(source) {\n        //                 ('#hihi').html(source);\n        //                 //alert(response);\n        //             });\n        // });",
+			"Ruserinfo",
+			"ul.Ruserinfo li { padding-left: 30px; }",
+			"openDatabase",
+			"date_default_timezone_set('Asia/Ho_Chi_Minh');\n$_SESSION['start_qol'] = date('Y-m-d H:i:s');\nqol_save_result();",
+			"print_r",
+			"echo",
+			"alert(\"gui thanh cong\"); ",
+			"blue_1",
+			"\"tooltip\"\"",
+			"huấn",
+			" style=\"font-weight: bold;\"",
+			" style=\"font-weight: bold;",
+			"Applications of Social Media Analytics for Enterprises in Japan and Vietnam",
+			"<span class=\"classic\">Tóm tắt tiểu sử:</span>",
+			"<span class=\"classic\">Tóm tắt:</span>",
+			"box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);\n			-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);\n			-moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);",
+			"classic",
+			"calculate_score()",
+			"form",
+			"Tuy nhiên, do gia đình vẫn còn lo lắng về của con",
+			"Tuy nhiên, do gia đình vẫn còn lo lắng về của con, gia đình nên làm thêm câu hỏi sàng lọ",
+			"Tuy nhiên, do gia đình vẫn còn lo lắng về của con, gia đình nên làm thêm câu hỏi sàng lọc tự kỷ M-CHAT-R để đánh giá về nguy cơ tự kỷ của trẻ bằng cách ấn vào đây",
+			"form",
+			"id_array",
+			"ajax_url",
+			"wp_ajax_calculate_score",
+			"result",
+			"asq-result",
+			"result",
+			"name='result",
+			"name=\"result",
+			"result",
+			"mchatr-result",
+			"form",
+			"%",
+			"<?",
+			"asq",
+			"form",
+			"asq",
+			"asq_user_information",
+			"TestingManagerBeginTestForm",
+			"asq",
+			"result",
+			"asq",
+			"popup_mchatr",
+			"begin_mchatr_test",
+			"form accept-charset=\"utf-8\" action=\"\"",
+			"form",
+			"tinhDiem",
+			"result",
+			"begin_asq_test",
+			"calculate_score",
+			"mchatr_save_result",
+			"form",
+			"out()",
+			"week_of_birth",
+			"btn_lamtest",
+			"data",
+			"$_SESSION['mchatr_result_id']",
+			"$_SESSION['mchatr_result_id'])",
+			"$_SESSION['current_user']",
+			"admin_url",
+			"ajax_url",
+			"btn_lamtest",
+			"admin-ajax",
+			"ajax_url",
+			"a365_ajax",
+			"tinhDiem",
+			"button_tinhdiem",
+			"tinhD",
+			"form",
+			"tinhDiem",
+			"out",
+			"btn_lamtest",
+			"init",
+			"btn_lamtest",
+			"popup_reg_child",
+			"add-child-not-login",
+			"asq_get_child_info",
+			"title_resuilt",
+			"Ruserinfo",
+			"ReLeft",
+			"out",
+			"out()",
+			"kiểm",
+			"bảng",
+			"printDiv",
+			"print-all",
+			"form",
+			"zero_pleasing",
+			">\n",
+			"<?php \nfunction MailWithAttachment($to, $subject, $message, $senderMail, $senderName, $files){\n\n    $from = $senderName.\" <\".$senderMail.\">\"; \n    $headers = \"From: $from\";\n\n    // boundary \n    $semi_rand = md5(time()); \n    $mime_boundary = \"==Multipart_Boundary_x{$semi_rand}x\"; \n\n    // headers for attachment \n    $headers .= \"\\nMIME-Version: 1.0\\n\" . \"Content-Type: multipart/mixed;\\n\" . \" boundary=\\\"{$mime_boundary}\\\"\"; \n\n    // multipart boundary \n    $message = \"--{$mime_boundary}\\n\" . \"Content-Type: text/html; charset=\\\"UTF-8\\\"\\n\" .\n    \"Content-Transfer-Encoding: 7bit\\n\\n\" . $message . \"\\n\\n\"; \n\n    // preparing attachments\n    if(count($files) > 0){\n        for($i=0;$i<count($files);$i++){\n            if(is_file($files[$i])){\n                $message .= \"--{$mime_boundary}\\n\";\n                $fp =    @fopen($files[$i],\"rb\");\n                $data =  @fread($fp,filesize($files[$i]));\n                @fclose($fp);\n                $data = chunk_split(base64_encode($data));\n                $message .= \"Content-Type: application/octet-stream; name=\\\"\".basename($files[$i]).\"\\\"\\n\" . \n                \"Content-Description: \".basename($files[$i]).\"\\n\" .\n                \"Content-Disposition: attachment;\\n\" . \" filename=\\\"\".basename($files[$i]).\"\\\"; size=\".filesize($files[$i]).\";\\n\" . \n                \"Content-Transfer-Encoding: base64\\n\\n\" . $data . \"\\n\\n\";\n            }\n        }\n    }\n    $message .= \"--{$mime_boundary}--\";\n    $returnpath = \"-f\" . $senderMail;\n\n    //send email\n    $mail = @mail($to, $subject, $message, $headers, $returnpath); \n\n    //function return true, if email sent, otherwise return fasle\n    if($mail){ return TRUE; } else { return FALSE; }\n}\n\nif(!empty($_POST['data'])){\n\n    //email variables\n    $to = 'to-email@email.com';\n    $from = 'from-email@email.com';\n    $from_name = 'PDF FIle';\n\n    //attachment files path array\n    $file = base64_decode($_POST['data']);\n\n    $subject = 'PHP Email with attachment'; \n    $html_content = '<h1>PHP Email with attachment</h1>';\n\n    //call MailWithAttachment() function and pass the required arguments\n    $send_email = MailWithAttachment($to,$subject,$html_content,$from,$from_name,$file);\n\n    //print message after email sent\n    echo $send_email?\"<h1> Mail Sent</h1>\":\"<h1> Mail not SEND</h1>\";\n\n} else {\n    echo \"No Data Found\";\n} \n?>",
+			"</a>",
+			"<a onclick=\"showDownloadMessage()\" target=\"_blank\">",
+			"href=\"files/test.pdf\"",
+			"form",
+			"echo",
+			"print",
+			"echo",
+			"form",
+			"bypassme",
+			"send_mail_ASQ",
+			"js__p_start share_email",
+			"send_ASQ",
+			"S",
+			"current_child",
+			";\n",
+			"get_month_test",
+			"month_test",
+			"asq_set",
+			"month_test",
+			"get_month",
+			"global $month",
+			"get_current_user_id",
+			"birthday",
+			"hasDatepicker",
+			"kiemtra",
+			"Làm bài",
+			"add_new_child"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"<span class=\"classic\"><b>Tóm tắt tiểu sử:</b><br></span>",
+			"<span class=\"classic\"><b>Tóm tắt:</b><br></span>",
+			"50%",
+			"<span class=\"classic\">Bài giảng sẽ được cập nhật trong thời gian diễn ra trường hè</span></a>",
+			"<a class=\"tooltip2\" target=\"_blank\">",
+			"onclick=\"showDownloadMessage()\"",
+			"",
+			"15px",
+			"p",
+			"href=\"#noidung\"",
+			"profile_placeholder.gif",
+			"div",
+			"/img/"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/duongquangvu/A365"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mailer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "asq_result.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								894
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 229.0
+	},
+	"pinned_build_system": "Packages/Default/Syntax Tests.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
