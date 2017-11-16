@@ -20,7 +20,7 @@ function a365_insert_new_users(){
 	$reg_officer_arr = array();
 	if(isset($_POST['reg_parent_submit'])){
 		if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
-			
+
 			$reg_parent_arr['Type'] = 'Người chăm sóc';
 			if(isset($_POST['reg_parent_email'])){
 				$reg_parent_arr['Email'] = $_POST['reg_parent_email'];
@@ -64,7 +64,7 @@ function a365_insert_new_users(){
 		        WHERE area_code = %d
 		          ', $reg_parent_arr['City']))[0]->user_count + 1;
 				$user_id =  str_pad($reg_parent_arr['City'], 2, '0', STR_PAD_LEFT) . str_pad($area_order, 7, '0', STR_PAD_LEFT);
-				$wpdb->query( 
+				$wpdb->query(
 					$wpdb->prepare("
 	                  INSERT INTO a365_users (id, area_code, area_order, email, name, type, sex, year_of_birth, child_relationship, occupation, phone, address) VALUES (%s, %d, %d, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 	            	",
@@ -84,11 +84,11 @@ function a365_insert_new_users(){
 	                    )
                 	)
                 );
-                
+
 			}
-			
+
 		}
-		
+
 	}
 
 
@@ -124,7 +124,7 @@ function a365_insert_new_users(){
 			if(isset($_POST['reg_officer_city'])){
 				$reg_officer_arr['City'] = $_POST['reg_officer_city'];
 			}
-			
+
 			if( $_POST['reg_officer_password'] == $_POST['reg_officer_password_check']  && !email_exists($reg_officer_arr['Email']) && $reg_officer_arr['Email'] != ""){
 				$area_order = $wpdb->get_results($wpdb->prepare('
 		        SELECT  user_count
@@ -132,7 +132,7 @@ function a365_insert_new_users(){
 		        WHERE area_code = %d
 		          ', $reg_officer_arr['City']))[0]->user_count + 1;
 				$user_id = str_pad($reg_officer_arr['City'], 2, '0', STR_PAD_LEFT) . str_pad($area_order, 7, '0', STR_PAD_LEFT);
-				$wpdb->query( 
+				$wpdb->query(
 					$wpdb->prepare("
 	                  INSERT INTO a365_users (id, area_code, area_order, email, name, type, sex, year_of_birth, occupation, work_place) VALUES (%s, %d, %d, %s, %s, %s, %s, %s, %s, %s)
 	            	",
@@ -149,11 +149,11 @@ function a365_insert_new_users(){
 	                      $reg_officer_arr['WorkingPlace']
 	                    )
                 	)
-                );		
+                );
 			}
 		}
 	}
-	
+
 }
 
 
@@ -199,8 +199,8 @@ function a365_add_new_member() {
 		}
 		if(isset($_POST['reg_officer_password_check'])){
 			$pass_confirm		= $_POST["reg_officer_password_check"];
-		}	
- 
+		}
+
 		// this is required for username checks
 		require_once(ABSPATH . WPINC . '/registration.php');
  		$a365_errors_messages = '';
@@ -212,7 +212,7 @@ function a365_add_new_member() {
 			// invalid username
 			$a365_errors_messages = 'Tên tài khoản không hợp lý';
 		}
-		
+
 		if(!is_email($user_email)) {
 			//invalid email
 			$a365_errors_messages = 'Email không hợp lý';
@@ -232,7 +232,7 @@ function a365_add_new_member() {
  		if($a365_errors_messages !=''){
  			echo "<script type='text/javascript'>alert('$a365_errors_messages');</script>";
  		}
- 
+
 		// only create the user in if there are no errors
 		if($a365_errors_messages == '' ) {
  			a365_insert_new_users();
@@ -251,7 +251,7 @@ function a365_add_new_member() {
 		        $code = sha1( $user_id . time() );
 		        $page = get_page_by_path( 'email-activatation' );
 		        $activation_link = get_permalink( $page->ID) . '?key='.$code.'&user='.$user_id;
-		        
+
 		        add_user_meta( $user_id, 'has_to_be_activated', $code, true );
 		        $mail = new PHPMailer(); // create a new object
 				$mail->IsSMTP(); // enable SMTP
@@ -259,7 +259,7 @@ function a365_add_new_member() {
 				$mail->SMTPAuth = true; // authentication enabled
 				$mail->Host = "smtp.gmail.com";
 				$mail->Port = 587; // or 587
-				$mail->SMTPSecure = 'tls';   
+				$mail->SMTPSecure = 'tls';
 				$mail->IsHTML(true);
 				$mail->Username = "a365@ccihp.org";
 				$mail->Password = "smartcare";
@@ -282,8 +282,8 @@ function a365_add_new_member() {
 </tr>
 <tr>
 <td style="border-top:1px solid #dce1e5">
-<h3><span style="font-size:12pt">Chúc mừng bạn đã đăng ký thành công tài khoản trên <a href="http://a365.vn">a365.vn</a></span></h3>
-<h4 style="font-weight:normal"><span style="font-size:10pt">Chúng tôi cảm ơn bạn đã tin tưởng và đăng ký sử dụng <a href="http://a365.vn">a365.vn</a>. Để hoàn tất quá trình đăng ký, hãy nhấp vào <a href='.$activation_link.'>đây</a> để kích hoạt tài khoản.</span></h4>
+<h3><span style="font-size:12pt">Chúc mừng bạn đã đăng ký thành công tài khoản trên <a href="https://a365.vn">a365.vn</a></span></h3>
+<h4 style="font-weight:normal"><span style="font-size:10pt">Chúng tôi cảm ơn bạn đã tin tưởng và đăng ký sử dụng <a href="https://a365.vn">a365.vn</a>. Để hoàn tất quá trình đăng ký, hãy nhấp vào <a href='.$activation_link.'>đây</a> để kích hoạt tài khoản.</span></h4>
 </td>
 </tr>
 <tr>
@@ -443,16 +443,16 @@ function a365_add_new_password() {
             );
       $response = array(
         'message' => 'successful'
-      );    
+      );
       echo json_encode($response);
       $_SESSION['reset']  = 0;
-      wp_die(); 
+      wp_die();
     }
 
     else {
       $response = array(
         'message' => $wp_hasher->CheckPassword($old, $check)
-      );    
+      );
       echo json_encode($response);
       wp_die();
     }

@@ -39,7 +39,7 @@
                     <?php  else: ?>
                       <ul>
                           <li>
-                              <a href="http://a365.vn/quan-ly-bai-test-tai-khoan.html">
+                              <a href="https://a365.vn/quan-ly-bai-test-tai-khoan.html">
                                   <span class="icon_account">
                                       <?php
                                         $user = wp_get_current_user();
