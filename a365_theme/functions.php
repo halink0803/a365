@@ -148,7 +148,7 @@ function a365_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Contact Information', 'a365' ),
 		'id'            => 'contact-information',
@@ -177,7 +177,7 @@ function a365_scripts() {
 
 	wp_enqueue_script( 'jquery-min', get_template_directory_uri() . '/js/jquery-ui.min.js', array('jquery'), true );
 
-	wp_enqueue_script( 'jquery-validate', 'http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js', array('jquery'), true );
+	wp_enqueue_script( 'jquery-validate', 'https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js', array('jquery'), true );
 
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery', true) );
 
@@ -202,7 +202,7 @@ function a365_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'a365_scripts' );
 
- if ( is_admin() ) { 
+ if ( is_admin() ) {
 	add_filter( 'show_admin_bar', '__return_false' );
 }
 
@@ -243,7 +243,7 @@ add_action( 'pre_get_posts', 'a365_get_posts' );
 function a365_get_posts( $query )
 {
     $query->set('orderby', array('date' => 'ASC'));
-       
+
     return $query;
 }
 
@@ -268,21 +268,21 @@ function a365_create_posttype() {
 		'not_found'           => __( 'Not Found', 'a365' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'a365' ),
 	);
-	
+
 // Set other options for Custom Post Type
-	
+
 	$args = array(
 		'label'               => __( 'News', 'a365' ),
 		'description'         => __( 'News and reviews', 'a365' ),
 		'labels'              => $labels,
 		// Features this CPT supports in Post Editor
 		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
-		// You can associate this CPT with a taxonomy or custom taxonomy. 
+		// You can associate this CPT with a taxonomy or custom taxonomy.
 		'taxonomies'          => array( 'genres'),
 		/* A hierarchical CPT is like Pages and can have
 		* Parent and child items. A non-hierarchical CPT
 		* is like Posts.
-		*/	
+		*/
 		'hierarchical'        => true,
 		'public'              => true,
 		'show_ui'             => true,
@@ -295,7 +295,7 @@ function a365_create_posttype() {
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 	);
-	
+
 	// Registering your Custom Post Type
 	register_post_type( 'news', $args );
 
@@ -304,7 +304,7 @@ function a365_create_posttype() {
 add_action( 'init', 'a365_create_posttype' );
 
 add_action('after_setup_theme', 'remove_admin_bar');
- 
+
 function remove_admin_bar() {
 	if (!current_user_can('administrator') && !is_admin()) {
 	  show_admin_bar(false);
@@ -350,7 +350,7 @@ function wpb_sender_name( $original_email_from ) {
 	return 'A365';
 }
 
-// Hooking up our functions to WordPress filters 
+// Hooking up our functions to WordPress filters
 add_filter( 'wp_mail_from', 'wpb_sender_email' );
 add_filter( 'wp_mail_from_name', 'wpb_sender_name' );
 
