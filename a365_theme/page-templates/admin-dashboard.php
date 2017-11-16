@@ -166,11 +166,8 @@ $records4 = $obj4->countAtec();
                     </div>
                 </div>
                 <!-- /.row -->
-
-
             </div>
             <!-- /.container-fluid -->
-
         </div>
         <!-- /#page-wrapper -->
 
@@ -179,15 +176,12 @@ $records4 = $obj4->countAtec();
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-
     <!-- Morris Charts JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script src="js/plugins/morris/morris-data.js"></script>
-
 </body>
 
 </html>

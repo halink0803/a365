@@ -8,6 +8,11 @@ var deletebutton = "ajaxDelete";
 var editbutton = "ajaxEdit";
 var updatebutton = "ajaxUpdate";
 var cancelbutton = "cancel";
+var saveImage = "https://a365.vn/wp-content/themes/a365_theme/images/save.png";
+var editImage = "https://a365.vn/wp-content/themes/a365_theme/images/edit.png";
+var deleteImage = "https://a365.vn/wp-content/themes/a365_theme/images/remove.png";
+var cancelImage = "https://a365.vn/wp-content/themes/a365_theme/images/back.png";
+var updateImage = "https://a365.vn/wp-content/themes/a365_theme/images/save.png";
 var viewbutton = "ajaxView";
 var trcopy = new Array();
 var editing = 0;
@@ -21,10 +26,10 @@ var idx;
 $(document).ready(function(){
 	//$('.loader').remove();
 
-	// set images for edit and delete 
+	// set images for edit and delete
 	$(".eimage").attr("src",editImage);
 	$(".dimage").attr("src",deleteImage);
-	
+
 	// Delete record
 	$(document).on("click","."+deletebutton,function(){
 		var btn = $(this);
@@ -89,8 +94,8 @@ $(document).ready(function(){
 				}
 			}
 		}
-		
-		
+
+
 	});
 
 	// edit record
@@ -120,13 +125,13 @@ $(document).ready(function(){
 		}
   		var rowData = row.data();
   		var input;
-		
+
 		//console.log("table_id: "+table_id);
-		
+
 		if(id && editing == 0 && tdediting == 0){
 			// hide editing row, for the time being
 			//$("#"+table_id+" tbody tr:last-child").fadeOut("fast");
-					
+
 			//html += "<td>"+$("#"+table_id+" tr[id="+id+"] td:first-child").html()+"</td>";
 			for(i=0;i<columns.length;i++){
   				var val = $(document).find("#"+table_id+" tr[id="+id+"] td[class='"+columns[i]+"']").html();
@@ -223,14 +228,14 @@ $(document).ready(function(){
   			//row.invalidate().draw();
 			//console.log("rowData: "+rowData);
 		editing = 0;
-		
+
 	});
 
 	// $(document).on("click","."+viewbutton,function(){
 	// 	var child_id = $(this).parents('tr').attr('id');
 	// 	window.open("../admin-child-information?id="+child_id, '_blank');
 	// });
-	
+
 	// tr click event
 	$(document).on("click","table"+" tr",function(e){
 		var table_id = $(this).parent().parent().attr('id');
@@ -258,7 +263,7 @@ $(document).ready(function(){
 				            var title = $(this).text();
 				            $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
 				        } );
-				     
+
 				        // DataTable
 				        child_table = $('#a365_children').DataTable({
 				            "scrollX": true,
@@ -271,7 +276,7 @@ $(document).ready(function(){
 					                text: 'Ẩn/Hiện cột',
 					                collectionLayout: 'fixed two-column'
 					            },
-					            
+
 					            {
 					                extend: 'collection',
 					                text: 'Xuất dữ liệu',
@@ -314,13 +319,13 @@ $(document).ready(function(){
 					                ]
 					                //'copy', 'csv', 'excel', 'pdf']
 					            }
-					            
+
 					        ]
 				        });
 				        // Apply the search
 				        child_table.columns().every( function () {
 				            var that = this;
-				     
+
 				            $( 'input', this.footer() ).on( 'keyup change', function () {
 				                if ( that.search() !== this.value ) {
 				                    that.search( this.value ).draw();
@@ -333,7 +338,7 @@ $(document).ready(function(){
         	};
         	xmlhttp.open("GET","../ajax?q="+selected_row+"&table=a365_children",true);
         	xmlhttp.send();
-       
+
 		}
 		if (table_id == "a365_children") {
 			selected_row = $(this).attr("id");
@@ -362,7 +367,7 @@ $(document).ready(function(){
 				            var title = $(this).text();
 				            $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
 				        } );
-				     
+
 				        // DataTable
 				        child_table = $('#a365_children_report').DataTable({
 				            "scrollX": true,
@@ -375,7 +380,7 @@ $(document).ready(function(){
 					                text: 'Ẩn/Hiện cột',
 					                collectionLayout: 'fixed two-column'
 					            },
-					            
+
 					            {
 					                extend: 'collection',
 					                text: 'Xuất dữ liệu',
@@ -418,13 +423,13 @@ $(document).ready(function(){
 					                ]
 					                //'copy', 'csv', 'excel', 'pdf']
 					            }
-					            
+
 					        ]
 				        });
 				        // Apply the search
 				        child_table.columns().every( function () {
 				            var that = this;
-				     
+
 				            $( 'input', this.footer() ).on( 'keyup change', function () {
 				                if ( that.search() !== this.value ) {
 				                    that.search( this.value ).draw();
@@ -437,7 +442,7 @@ $(document).ready(function(){
         	};
         	xmlhttp.open("GET","../ajax?q="+selected_row+"&table=a365_children_report",true);
         	xmlhttp.send();
-       
+
 		}
 		// click a row of a365_children_report
 		if (table_id == "a365_children_report") {
@@ -462,7 +467,7 @@ $(document).ready(function(){
 				            var title = $(this).text();
 				            $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
 				        } );
-				     
+
 				        // DataTable
 				        sangloc_table = $('#a365_sangloc').DataTable({
 				            "scrollX": true,
@@ -475,7 +480,7 @@ $(document).ready(function(){
 					                text: 'Ẩn/Hiện cột',
 					                collectionLayout: 'fixed two-column'
 					            },
-					            
+
 					            {
 					                extend: 'collection',
 					                text: 'Xuất dữ liệu',
@@ -518,13 +523,13 @@ $(document).ready(function(){
 					                ]
 					                //'copy', 'csv', 'excel', 'pdf']
 					            }
-					            
+
 					        ]
 				        });
 				        // Apply the search
 				        child_table.columns().every( function () {
 				            var that = this;
-				     
+
 				            $( 'input', this.footer() ).on( 'keyup change', function () {
 				                if ( that.search() !== this.value ) {
 				                    that.search( this.value ).draw();
@@ -537,11 +542,11 @@ $(document).ready(function(){
         	};
         	xmlhttp.open("GET","../ajax?q="+selected_row+"&table=a365_sangloc",true);
         	xmlhttp.send();
-       
+
 		}
 		return;
 	});
-	
+
 });
 
 createInput = function(i,str,table_id){
@@ -565,14 +570,14 @@ createInput = function(i,str,table_id){
 }
 
 ajax = function (params,action,table_id){
-	
+
 	params = params.replace("&name=", "&fname=");
 	if (params.startsWith("name="))
 		params = "f"+params;
 	//console.log("reponse: "+params+"&action="+action+"&table="+table_id);
 	$.ajax({
-		type: "post", 
-		url: "../ajax", 
+		type: "post",
+		url: "../ajax",
 		data : params+"&action="+action+"&table="+table_id,
 		success: function(response){
 			//var dataObject = jQuery.parseJSON(data);
@@ -592,7 +597,7 @@ ajax = function (params,action,table_id){
 				var seclastRow = $("#"+table_id+" tr").length;
 				if(response.success == 1){
 					var html = "";
-					
+
 					html += "<td>"+parseInt(seclastRow - 1)+"</td>";
 					for(i=0;i<columns.length;i++){
 						html +='<td class="'+columns[i]+'">'+response[columns[i]]+'</td>';
@@ -600,7 +605,7 @@ ajax = function (params,action,table_id){
 					html += '<td><a href="javascript:;" id="'+response.id+'" class="ajaxEdit"><img src="'+editImage+'"></a> <a href="javascript:;" id="'+response["id"]+'" class="'+deletebutton+'"><img src="'+deleteImage+'"></a></td>';
 					// Append new row as a second last row of a table
 					$("#"+table_id+" tr").last().before('<tr id="'+response.id+'">'+html+'</tr>');
-					
+
 					if(effect == "slide"){
 						// Little hack to animate TR element smoothly, wrap it in div and replace then again replace with td and tr's ;)
 						$("#"+table_id+" tr:nth-child("+seclastRow+")").find('td')
@@ -645,11 +650,11 @@ ajax = function (params,action,table_id){
 				}
 				//var idx = child_table.row('.selected').index();
     			//console.log("idx: "+idx);
-				$("."+cancelbutton).trigger("click");	
-				 ////console.log("input: "+response[columns[2]]); 			
+				$("."+cancelbutton).trigger("click");
+				 ////console.log("input: "+response[columns[2]]);
 				var tr = $("#"+table_id+" tr[id='0100000180001']") ;
 					// //console.log(tr);
- 				
+
 	////console.log("rowData: "+rowData);
 
 			break;
@@ -677,5 +682,5 @@ ajax = function (params,action,table_id){
             var newdate = dateParts[2]+'-'+dateParts[1]+'-'+dateParts[0];
             return newdate;
         }
- 
-    }   
+
+    }
