@@ -107,7 +107,7 @@ get_header();
         <div class="wrapper">
             <div class="video_home">
                 <div class="form_video">
-                    <a href="#" data-mimo="modal:popup_reg_child_anonimous" class="add-child-not-login" title="" style="display:block;">ASQ Test</a>
+                    <a href="#" data-mimo="modal:popup_reg_child_anonimous" class="add-child-not-login" title="" style="display:block;">ASQ® Test</a>
                     <?php
                         $pages = get_pages(array(
                             'meta_key' => '_wp_page_template',
@@ -160,7 +160,7 @@ get_header();
                 <div class="clear">
                 </div>
             </div>
-            
+
             <div class="mimo_modal" id="popup4">
                 <img alt""="" data-mimo-src="castle.jpg" title="">
                     <div class="popup4" style="padding: 0 30px 20px 30px;">
@@ -391,7 +391,7 @@ get_header();
         ✕
     </div>
     <div class="popup_reg_child">
-        <form accept-charset="utf-8" action="" enctype="multipart/form-data" id="ChildManagerTestForm" method="post">             
+        <form accept-charset="utf-8" action="" enctype="multipart/form-data" id="ChildManagerTestForm" method="post">
             <div class="p_content">
                 <h3 class="tit_res">
                     THÔNG TIN TRẺ
@@ -426,7 +426,7 @@ get_header();
                                 <input id="ChildSex0" name="child_gender" type="radio" value="Nữ">
                                     <label for="ChildSex0">
                                         Nữ
-                                    </label>                                    
+                                    </label>
                             </td>
                         </tr>
                         <tr>
@@ -466,7 +466,7 @@ get_header();
         ✕
     </div>
     <div class="popup_reg_child">
-        <form accept-charset="utf-8" action="" enctype="multipart/form-data" id="ChildManagerTestForm" method="post">             
+        <form accept-charset="utf-8" action="" enctype="multipart/form-data" id="ChildManagerTestForm" method="post">
             <div class="p_content">
                 <h3 class="tit_res">
                     THÔNG TIN TRẺ
@@ -501,7 +501,7 @@ get_header();
                                 <input id="ChildSex0" name="child_gender" type="radio" value="Nữ">
                                     <label for="ChildSex0">
                                         Nữ
-                                    </label>                                    
+                                    </label>
                             </td>
                         </tr>
                         <tr>
@@ -529,7 +529,7 @@ get_header();
                         </tr>
                     </tbody>
                 </table>
-            </div>            
+            </div>
             <div class="button_send">
                 <button class="btn_lamtest" name="begin_mchatr_test" type="submit" value="Làm test cho con"></button>
             </div>

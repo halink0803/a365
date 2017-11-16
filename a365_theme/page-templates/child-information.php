@@ -27,7 +27,7 @@ $totalPage         = ceil($total / $items_per_page);
 				<?php $pages = get_pages(array(
 			          'meta_key' => '_wp_page_template',
 			          'meta_value' => 'page-templates/register-child.php'
-			      )); ?> 
+			      )); ?>
 				<a href="<?php echo home_url($pages[0]->post_name) ?>" class="qh-btn qh-btn-lg qh-btn-blue text-uppercase">Đăng ký trẻ mới</a>
 			</div>
 		</div>
@@ -38,23 +38,23 @@ $totalPage         = ceil($total / $items_per_page);
 						<table class="table">
 						 	<thead>
 						 		<tr>
-						 			<th class="child-checkbox"></th> 
-							 		<th class="child-name">Họ tên</th> 
-							 		<th class="child-dob">Ngày sinh</th> 
-							 		<th class="child-sex">Giới tính</th> 
-						 		</tr> 
+						 			<th class="child-checkbox"></th>
+							 		<th class="child-name">Họ tên</th>
+							 		<th class="child-dob">Ngày sinh</th>
+							 		<th class="child-sex">Giới tính</th>
+						 		</tr>
 						 		<tr class="search-row">
 						 			<th></th>
 						 			<th><input type="text" class="search-input hidden" placeholder="Tìm tên"></th>
 						 			<th><input type="text" class="search-input hidden" placeholder="Tìm ngày sinh"></th>
 						 			<th></th>
-						 		</tr> 
+						 		</tr>
 						 	</thead>
 						 	<tbody>
-						 		
+
 						 		<?php if(count($children) > 0) : ?>
 							 		<?php foreach($children as $index => $child) : ?>
-							 		<tr id="<?=$child->id?>">							 		
+							 		<tr id="<?=$child->id?>">
 						 				<td class="child-checkbox"><label class="row-data"><input type="radio" name="child" value="<?php echo $child->id ?>" id="checkbox<?php echo $index ?>"></label></td>
 										<td class="child-name"><label class="row-data" for="checkbox<?php echo $index ?>"><?php echo $child->name; ?></label></td>
 										<td class="child-dob"><label class="row-data" for="checkbox<?php echo $index ?>"><?php echo $child->date_of_birth; ?></label></td>
@@ -66,7 +66,7 @@ $totalPage         = ceil($total / $items_per_page);
 										    ));
 										?>
 										<td class="child-sex"><label class="row-data" for="checkbox<?php echo $index ?>"><a style="color:#3f3f3f;" href="#" data-target="#modalDeleteChild" data-toggle="modal" disabled><i class="fa fa-close c-red"></i> Xóa</a></label></td>
-										<td class="child-sex"><label class="row-data" for="checkbox<?php echo $index ?>"><a style="color:#3f3f3f;" href="<?php echo home_url($pages[0]->post_name) ?>" disabled><i class="fa fa-cog c-blue"></i> Sửa</a></label></td> 
+										<td class="child-sex"><label class="row-data" for="checkbox<?php echo $index ?>"><a style="color:#3f3f3f;" href="<?php echo home_url($pages[0]->post_name) ?>" disabled><i class="fa fa-cog c-blue"></i> Sửa</a></label></td>
 							 		</tr>
 							 		<?php endforeach; ?>
 								<?php endif; ?>
@@ -75,7 +75,7 @@ $totalPage         = ceil($total / $items_per_page);
 					</div>
 					<?php if(count($children) == 0) : ?>
 						<div class="list-empty-notify text-center">Hiện chưa có trẻ nào trong danh sách. Vui lòng ấn đăng ký mới để bắt đầu.</div>
-					<?php endif; ?>					
+					<?php endif; ?>
 					<?php if(count($children) > 0) : ?>
 						<div class="qh-pagination text-right mg-b0">
 							<ul class="list-unstyled">
@@ -117,7 +117,7 @@ $totalPage         = ceil($total / $items_per_page);
 							        'meta_value' => 'page-templates/asq.php'
 							    ));
 							?>
-							<a href="<?php echo home_url($pages[0]->post_name) ?>" class="action-single qh-btn qh-btn-cblue full-width" disabled>Làm bài theo dõi phát triển (ASQ)</a>
+							<a href="<?php echo home_url($pages[0]->post_name) ?>" class="action-single qh-btn qh-btn-cblue full-width" disabled>Làm bài theo dõi phát triển (ASQ®)</a>
 							<?php
 								$pages = get_pages(array(
 							        'meta_key' => '_wp_page_template',
@@ -149,7 +149,7 @@ $totalPage         = ceil($total / $items_per_page);
 							        'meta_value' => 'page-templates/asq.php'
 							    ));
 							?>
-							<a href="<?php echo $pages[0]->guid ?>" class="action-single qh-btn qh-btn-cblue full-width" disabled>Làm bài theo dõi phát triển (ASQ)</a>
+							<a href="<?php echo $pages[0]->guid ?>" class="action-single qh-btn qh-btn-cblue full-width" disabled>Làm bài theo dõi phát triển (ASQ®)</a>
 							<?php
 								$pages = get_pages(array(
 							        'meta_key' => '_wp_page_template',
@@ -169,7 +169,7 @@ $totalPage         = ceil($total / $items_per_page);
 					<div class="col-xs-12 col-sm-8 col-md-5">
 						<div class="action-title">Can thiệp</div>
 						<div class="action-btn-group">
-							<?php 
+							<?php
 								$pages = get_pages(array(
 							        'meta_key' => '_wp_page_template',
 							        'meta_value' => 'page-templates/edit-child-status.php'
@@ -209,18 +209,18 @@ $totalPage         = ceil($total / $items_per_page);
 						<table class="display" id="test-table" cellspacing="0" width="100%">
 						 	<thead>
 						 		<tr>
-						 			<th>Chọn</th> 
-							 		<th>Ngày làm bài</th> 
-							 		<th>Bài sàng lọc</th> 
-							 		<th>Trạng thái</th> 
+						 			<th>Chọn</th>
+							 		<th>Ngày làm bài</th>
+							 		<th>Bài sàng lọc</th>
+							 		<th>Trạng thái</th>
 						 		</tr>
 						 	</thead>
 						 	<tfoot>
 						 		<tr>
-							 		<th>Tìm</th> 
-								 	<th class="xxx">Ngày làm bài</th> 
-								 	<th class="xxx">Bài sàng lọc</th> 
-								 	<th class="xxx">Trạng thái</th> 
+							 		<th>Tìm</th>
+								 	<th class="xxx">Ngày làm bài</th>
+								 	<th class="xxx">Bài sàng lọc</th>
+								 	<th class="xxx">Trạng thái</th>
 						 		</tr>
 						 	</tfoot>
 						 	<tbody>
@@ -305,7 +305,7 @@ $totalPage         = ceil($total / $items_per_page);
 						    ));
 						?>
 						<div class="gumsue-result-link" link="<?php echo home_url($pages[0]->post_name) ?>"></div>
-					</div>					
+					</div>
 					<!-- <div class="single-action"><a href="#"><i class="fa fa-file-text-o c-blue"></i> Xem bài làm</a></div> -->
 					<div class="single-action"><a href="#" class="view-result"><i class="fa fa-calendar-check-o c-blue"></i> Xem kết quả</a></div>
 					<div class="single-action"><a href="#" class="disabled continue-test" id="lamtiep"><i class="fa fa-pencil-square-o c-blue"></i> Làm tiếp</a></div>
@@ -317,7 +317,7 @@ $totalPage         = ceil($total / $items_per_page);
 	</div>
 	<div class="modal fade" id="modalDeleteChild" tabindex="-1">
       <div class="modal-dialog modal-sm" role="document">
-        <div class="qh-modal-content">          
+        <div class="qh-modal-content">
           <div class="qh-modal-body">
             <p>Bạn có chắc chắn muốn xóa thông tin trẻ?</p>
           </div>
@@ -332,7 +332,7 @@ $totalPage         = ceil($total / $items_per_page);
 
     <div class="modal fade" id="deleteHistory" tabindex="-1">
       <div class="modal-dialog modal-sm" role="document">
-        <div class="qh-modal-content">          
+        <div class="qh-modal-content">
           <div class="qh-modal-body">
             <p>Bạn có chắc chắn muốn xóa kết quả bài làm?</p>
           </div>
@@ -366,6 +366,6 @@ $totalPage         = ceil($total / $items_per_page);
 	  	}
   	})
 </script>
-<?php 
+<?php
 	get_footer('new');
 ?>

@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <div class="modal-content">
             <div class="modal-header" style="background-color: #eeecec">
                 <div class="tit_popup" align="left">
-                   <p style="text-align: center;"><span style="font-size: 10pt;"><strong>Hiện tại A365 chỉ có các bộ công cụ sàng lọc dành cho trẻ từ 9-48 tháng tuổi (đã được điều chỉnh theo tuần sinh của trẻ). Bạn hãy quay lại làm bài khi có trẻ ở trong độ tuổi này. Xem thêm về bộ ASQ tại <a href="../sang-loc/?ASQTool=1" target="blank">đây</a>.</strong></span></p>
+                   <p style="text-align: center;"><span style="font-size: 10pt;"><strong>Hiện tại A365 chỉ có các bộ công cụ sàng lọc dành cho trẻ từ 9-48 tháng tuổi (đã được điều chỉnh theo tuần sinh của trẻ). Bạn hãy quay lại làm bài khi có trẻ ở trong độ tuổi này. Xem thêm về bộ ASQ® tại <a href="../sang-loc/?ASQTool=1" target="blank">đây</a>.</strong></span></p>
             </div>
         </div>
         <div class="modal-footer" style="text-align: center;">
@@ -96,7 +96,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     <div class="row">
       <div class="col-xs-12 col-sm-6 mg-t10 mg-b10">
         <div class="child-month fw700 c-red text-uppercase">
-           Bài ASQ <?php echo $_SESSION['asq_set']  ?> tháng tuổi</div>
+           Bài ASQ® <?php echo $_SESSION['asq_set']  ?> tháng tuổi</div>
       </div>
 
       <div class="col-xs-12 col-sm-6 mg-t10 mg-b10 text-right-sm">Ngày làm: <?php echo date('d-m-Y') ?></div>

@@ -22,7 +22,7 @@
 						<div class="col-title text-uppercase"><a style="color: #ca2535" href="<?php echo get_site_url() . '/tin-tuc'; ?>">Tin tức</a></div>
 						<div class="col-body">
 							<ul class="list-news-update list-unstyled">
-								<?php 
+								<?php
 									$args = array(
 										'numberposts' => -1,
 										'offset' => 0,
@@ -53,7 +53,7 @@
 								}
 								wp_reset_query();
 								?>
-								
+
 							</ul>
 						</div>
 					</div>
@@ -69,7 +69,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-5">
 					<div class="footer-link-col text-right">
 						<div class="col-title">Trung tâm Sáng kiến Sức khỏe và Dân số (CCIHP)</div>
-						
+
 						<div class="col-body">
 							<div class="info-text">
 								<?php dynamic_sidebar( 'contact-information' ); ?>
@@ -81,7 +81,7 @@
 		</div>
 		<?php dynamic_sidebar( 'footer' ); ?>
 
-		
+
 		<div class="copyright-text">
 			<?php
 			echo '<div class="container">Bản quyền  ©'.get_the_time('Y').' A365™. Tất cả bản quyền được bảo lưu. Vui lòng liên hệ khi muốn sử dụng nội dung trên trang.</div>';
@@ -148,14 +148,14 @@
 			     	 $pages_officer = get_pages(array(
 			          'meta_key' => '_wp_page_template',
 			          'meta_value' => 'page-templates/register-officer.php'
-			     	 ));  
+			     	 ));
                 ?>
                   <li><a href="<?php echo home_url($pages_parent[0]->post_name) ?>" class="qh-btn qh-btn-cblue full-width">Cha mẹ/Thành viên khác trong gia đình</a></li>
                   <br/>
                   <li><a href="<?php echo home_url($pages_officer[0]->post_name) ?>" class="qh-btn qh-btn-cblue full-width">Cán bộ y tế/Cán bộ chuyên môn khác</a></li>
                 </ul>
               </div>
-             
+
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@
 						</div>
 						<div class="qh-form-row" style="margin: 0">
 							<label class="qh-label"><span class="align"></span><span class="text"></span></label>
-							
+
 							<div class="input-wrap">
 								<p style="margin: 0"><i>Nếu trẻ này không có thật, vui lòng đặt tên trẻ là test</i></p>
 							</div>
@@ -253,10 +253,10 @@
 								</select>
 								<select name="yyyy" id="yyyy" class="select_contact qh-form-control iblock">
 									<option value="" style="width:auto">Năm</option>
-									<?php 
+									<?php
 										for ($i = 2000; $i <= date("Y"); $i++) { ?>
 											<option value="<?php echo $i;?>"><?php echo $i;?></option>
-									<?php 
+									<?php
 										}
 									?>
 								</select>
@@ -303,7 +303,7 @@
 								</select> của thai kỳ
 							</div>
 						</div>
-						
+
 					<div class="qh-form-row">
 			            <label class="qh-label">
 			            	<span class="align"></span>
@@ -318,13 +318,13 @@
 			                    <option value="<?php echo $area->area_code ?>"><?php echo $area->name ?></option>
 			                    <?php endforeach; ?>
 				            </select>
-			               
+
 	            		</div>
-	        		 </div>    
+	        		 </div>
 					<div class="qh-form-row">
 						<div class="input-wrap">
 							<div class="qh-help-text c-red mg-b20"><b><i id="notice"></i></b></div>
-							<input type="button" name="asqNoLogin" value="Làm ASQ" class="qh-btn qh-btn-lg qh-btn-blue text-uppercase asqNoLogin"/>
+							<input type="button" name="asqNoLogin" value="Làm ASQ®" class="qh-btn qh-btn-lg qh-btn-blue text-uppercase asqNoLogin"/>
 							<input type="button" name="mchatNoLogin" value="Làm MCHAT R" class="qh-btn qh-btn-lg qh-btn-blue text-uppercase mchatNoLogin"/>
 							<span class="loading-icon hidden"><i class="fa fa-spinner fa-pulse fa-lg fa-fw"></i></span>
 						</div>
@@ -392,7 +392,7 @@
 								<label class="radio-inline"><input type="radio" name="did_at" value="Khác">Khác</label>
 							</div>
 						</div>
-							
+
 					<div class="qh-form-row">
 						<div class="input-wrap">
 							<div class="qh-help-text c-red mg-b20"><b><i id="notice2"></i></b></div>
@@ -464,7 +464,7 @@
 				                    <option value="<?php echo $area->area_code ?>"><?php echo $area->name ?></option>
 				                    <?php endforeach; ?>
 					            </select>
-			               
+
 	            			</div>
 	        		 	</div>
 				        <div class="qh-form-row">
@@ -481,7 +481,7 @@
 								<label class="radio-inline"><input type="radio" name="did_at" value="Khác">Khác</label>
 							</div>
 						</div>
-							
+
 						<div class="qh-form-row">
 							<div class="input-wrap">
 								<div class="qh-help-text c-red mg-b20"><b><i id="notice3"></i></b></div>
@@ -521,7 +521,7 @@
 								<textarea name="content" id='content' class="qh-form-control"></textarea>
 							</div>
 						</div>
-						
+
 						<div class="qh-form-row">
 							<div class="input-wrap">
 								<div class="qh-help-text c-red mg-b20"><b><i id="notice-mail"></i></b></div>
@@ -574,7 +574,7 @@
 						</div>
 					</div>
 					<p>
-						Nếu có thắc mắc hoặc gặp khó khăn, vui lòng liên hệ với chúng tôi theo Đường dây hỗ trợ: 0985 220 391 hoặc Email: support.a365@ccihp.org. 
+						Nếu có thắc mắc hoặc gặp khó khăn, vui lòng liên hệ với chúng tôi theo Đường dây hỗ trợ: 0985 220 391 hoặc Email: support.a365@ccihp.org.
 					<br/>
 					Chúng tôi xin lỗi vì sự bất tiện này. Cảm ơn bạn đã tin tưởng sử dụng A365.vn để chăm sóc cho trẻ.
 					</p>
@@ -590,7 +590,7 @@
 <script type="text/javascript" language="javascript" src="<?php echo get_template_directory_uri()."/js/main.js" ?>"></script>
 <script type="text/javascript">
 	var $=jQuery.noConflict();
-  	
+
   	$(document).ready(function(){
     	$(".share_mail").click(function(){
 	      	$("#Modal_Send_Mail").modal('show');
@@ -646,14 +646,14 @@
 	var $=jQuery.noConflict();
     $(document).ready(function(){
 
-        var user_check = <?php 
-                            if(isset($_SESSION['reset']) && $_SESSION['reset'] == 1) 
+        var user_check = <?php
+                            if(isset($_SESSION['reset']) && $_SESSION['reset'] == 1)
                                 echo "true";
                             else
                                 echo "false";
                         ?>;
         //console.log(user_check);
-        
+
         if (user_check == true) {
             $("#Modal_Change_Default_Password").modal({
                 backdrop: 'static',
@@ -669,7 +669,7 @@
                 if (password == '' || confirm_password == '') {
                     //console.log("đã check rồi");
                     $("#notice4").html("Bạn cần điền đầy đủ các trường được đánh dấu (*)!");
-                } 
+                }
                 else if( password != confirm_password ) {
                 	$("#notice4").html("Mật khẩu mới không trùng khớp, vui lòng kiểm tra lại.");
                 }
@@ -690,7 +690,7 @@
                       		$("#notice4").html("Thay đổi mật khẩu thất bại!");
                       	}
                       }
-                      
+
                     });
                 }
             });

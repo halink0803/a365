@@ -85,7 +85,7 @@ $records4 = $obj4->countAtec();
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge"><?=$records[0]["count"]?></div>
-                                        <div>ASQ</div>
+                                        <div>ASQ®</div>
                                     </div>
                                 </div>
                             </div>

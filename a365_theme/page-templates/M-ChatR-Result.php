@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                     <div class="title_date row">
                         <div class="title_test">
                             <div class="col-xs-12 col-sm-6 mg-t10 mg-b10">
-                                
+
                             </div>
                         </div>
                         <div class="date_test child-month fw700 c-red text-uppercase">
@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                                                 <a href='http://a365.vn/chan-doan-tu-ky/?listClinic=1' style='color:#1478b9;'>Danh sách một số cơ sở y tế được tập huấn và hiện đang có thực hiện đánh giá và chẩn đoán tự kỷ</a>. Lưu ý rằng M-CHAT- R chỉ là bộ công cụ sàng lọc để phát hiện trẻ có nguy cơ tự kỷ hoặc các rối loạn phát triển khác. <b>Kết quả M-CHAT- R không phải là kết quả chẩn đoán.</b>";
                                             break;
                                         default:
-                                            echo " Kết quả của sàng lọc cho thấy trẻ có nguy cơ tự kỷ. Bạn nên đến các cơ sở có uy tín về đánh giá và chẩn đoán tự kỷ để xác định tình trạng của con mình. <a style='color: #1478b9;' href='http://a365.vn/chan-doan-tu-ky/?listClinic=1'>Danh sách một số cơ sở y tế được tập huấn và hiện đang có thực hiện đánh giá và chẩn đoán tự kỷ</a>. Bạn hãy mang theo kết quả đánh giá phát triển theo độ tuổi (ASQ - nếu có) và bản kết quả này khi đến cơ sở y tế. Lưu ý rằng M- CHAT-R chỉ là bộ công cụ sàng lọc để phát hiện trẻ có nguy cơ tự kỷ hoặc các rối loạn phát triển khác. <b>Kết quả M-CHAT-R không phải là kết quả chẩn đoán</b>.";
+                                            echo " Kết quả của sàng lọc cho thấy trẻ có nguy cơ tự kỷ. Bạn nên đến các cơ sở có uy tín về đánh giá và chẩn đoán tự kỷ để xác định tình trạng của con mình. <a style='color: #1478b9;' href='http://a365.vn/chan-doan-tu-ky/?listClinic=1'>Danh sách một số cơ sở y tế được tập huấn và hiện đang có thực hiện đánh giá và chẩn đoán tự kỷ</a>. Bạn hãy mang theo kết quả đánh giá phát triển theo độ tuổi (ASQ® - nếu có) và bản kết quả này khi đến cơ sở y tế. Lưu ý rằng M- CHAT-R chỉ là bộ công cụ sàng lọc để phát hiện trẻ có nguy cơ tự kỷ hoặc các rối loạn phát triển khác. <b>Kết quả M-CHAT-R không phải là kết quả chẩn đoán</b>.";
                                             break;
                                     }
                                 ?>
@@ -106,9 +106,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                                         </div>
                                     </div>
                                 </div>
-                                <?php 
+                                <?php
                                     $questions = mchatr_get_questions();
-                                    for($i=0; $i<20; $i++): 
+                                    for($i=0; $i<20; $i++):
                                         $current = 'answer_' . strval($i + 1);
                                 ?>
                                     <div class="single-question">
@@ -116,7 +116,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                                         <div class="question-answer">
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="question-<?php echo $i+1;?>" 
+                                                    <input type="radio" name="question-<?php echo $i+1;?>"
                                                     <?php if($results[0]->$current == 1) echo "checked" ?> value="1" disabled="disabled"><span class="label-text">Có</span>
                                                 </label>
                                             </div>
@@ -150,7 +150,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             </div>
         </div>
     </div>
- 
+
 </body>
 <script type="text/javascript">
     function printDiv() {
@@ -162,19 +162,19 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     }
 
     function send() {
-      
+
         var oEl = document.getElementById('siteContent');
         // Getting the outerHTML of an element:
         var sOuterHTML = oEl.outerHTML;
         var data = encodeURIComponent(sOuterHTML);
         //console.log(data);
 
-        $.post("../send-email", 
-                {   
+        $.post("../send-email",
+                {
                     'testname' : 'mchatr',
                     'source' : data,
                     'field': $('#send_mail_form').serialize()
-                }, 
+                },
                 function() {
                     //alert("Email đã được gửi thành công!");
                 }).success(
@@ -194,14 +194,14 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     var $=jQuery.noConflict();
     $(document).ready(function(){
 
-        var user_check = <?php 
-                            if(checkUserType()==true) 
+        var user_check = <?php
+                            if(checkUserType()==true)
                                 echo "true";
                             else
                                 echo "false";
                         ?>;
         //console.log(user_check);
-        
+
         if (user_check == true) {
             $("#Modal_Respondent").modal({
                 backdrop: 'static',
@@ -239,7 +239,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                       success: function(response) {
                         $("#Modal_Respondent").modal('hide');
                       }
-                      
+
                     });
                 }
             });

@@ -20,13 +20,13 @@ function sendMailASQ() {
     //$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
     $mail->Username = "a365@ccihp.org";
     $mail->Password = "smartcare";
     $mail->SetFrom("a365@ccihp.org", "A365");
-    $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài sàng lọc ASQ")."?=";
-    $mail->IsHTML(true); 
+    $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài sàng lọc ASQ®")."?=";
+    $mail->IsHTML(true);
     $mail->MsgHTML( $fields['content'].'<br>'.
     '
     <table style="background:#f4f7f9" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#f4f7f9">
@@ -44,13 +44,13 @@ function sendMailASQ() {
     </tr>
     <tr>
     <td style="border-top:1px solid #dce1e5">
-    <p><strong>BẠN ĐÃ HOÀN THÀNH BÀI SÀNG LỌC ASQ!</strong></p>
+    <p><strong>BẠN ĐÃ HOÀN THÀNH BÀI SÀNG LỌC ASQ®!</strong></p>
     </td>
     </tr>
     <tr>
     <td style="border-top:1px solid #dce1e5" valign="top">
     <h4 style="color:#2db5e5!important">1.THÔNG TIN BÀI&nbsp;SÀNG LỌC</h4>
-    <p style="margin:0.5em 0">Tên bài ASQ: <strong>Bài ASQ '.$_SESSION['asq_set'].' tháng tuổi</strong></p>
+    <p style="margin:0.5em 0">Tên bài ASQ®: <strong>Bài ASQ® '.$_SESSION['asq_set'].' tháng tuổi</strong></p>
     </td>
     </tr>
     <tr>
@@ -122,15 +122,15 @@ function sendMailASQ() {
     $mpdf->WriteHTML($stylesheet, 1);
     $mpdf->WriteHTML($source, 2);
     $emailAttachment = $mpdf->Output('','S');
-    //$emailAttachment = chunk_split(base64_encode($emailAttachment)); 
+    //$emailAttachment = chunk_split(base64_encode($emailAttachment));
     //$mpdf->Output('/Users/duongquangvu/A365/a365_theme/filename.pdf','F');
     $filename = $_POST['testname'];
     $mail->AddStringAttachment($emailAttachment, $filename, 'base64', 'application/pdf');
     if(!$mail->Send()) {
-        $response = array('status' => 'fail');   
+        $response = array('status' => 'fail');
         echo json_encode($response);
     } else {
-        $response = array('status' => 'success');   
+        $response = array('status' => 'success');
         echo json_encode($response);
     }
 };
@@ -147,7 +147,7 @@ function sendMailMchatR() {
     //$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
     $mail->Username = "a365@ccihp.org";
     $mail->Password = "smartcare";
@@ -218,7 +218,7 @@ function sendMailMchatR() {
     $mail->AddAddress($fields['email']);
     //$data = base64_decode($_POST['data']);
     $source = $_POST['source'];
-    
+
     include("vendor/mpdf/mpdf/mpdf.php");
     $c = array(
         // mode: 'c' for core fonts only, 'utf8-s' for subset etc.
@@ -243,15 +243,15 @@ function sendMailMchatR() {
     $mpdf->WriteHTML($stylesheet, 1);
     $mpdf->WriteHTML($source, 2);
     $emailAttachment = $mpdf->Output('','S');
-    //$emailAttachment = chunk_split(base64_encode($emailAttachment)); 
+    //$emailAttachment = chunk_split(base64_encode($emailAttachment));
     //$mpdf->Output('/Users/duongquangvu/A365/a365_theme/filename.pdf','F');
     $filename = $_POST['testname'];
     $mail->AddStringAttachment($emailAttachment, $filename, 'base64', 'application/pdf');
     if(!$mail->Send()) {
-        $response = array('status' => 'fail');   
+        $response = array('status' => 'fail');
         echo json_encode($response);
     } else {
-        $response = array('status' => 'success');   
+        $response = array('status' => 'success');
         echo json_encode($response);
     }
 };
@@ -269,7 +269,7 @@ function sendMailMchatRF() {
     //$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
     $mail->Username = "a365@ccihp.org";
     $mail->Password = "smartcare";
@@ -340,7 +340,7 @@ function sendMailMchatRF() {
     $mail->AddAddress($fields['email']);
     //$data = base64_decode($_POST['data']);
     $source = $_POST['source'];
-    
+
     include("vendor/mpdf/mpdf/mpdf.php");
     $c = array(
         // mode: 'c' for core fonts only, 'utf8-s' for subset etc.
@@ -365,15 +365,15 @@ function sendMailMchatRF() {
     $mpdf->WriteHTML($stylesheet, 1);
     $mpdf->WriteHTML($source, 2);
     $emailAttachment = $mpdf->Output('','S');
-    //$emailAttachment = chunk_split(base64_encode($emailAttachment)); 
+    //$emailAttachment = chunk_split(base64_encode($emailAttachment));
     //$mpdf->Output('/Users/duongquangvu/A365/a365_theme/filename.pdf','F');
     $filename = $_POST['testname'];
     $mail->AddStringAttachment($emailAttachment, $filename, 'base64', 'application/pdf');
     if(!$mail->Send()) {
-        $response = array('status' => 'fail');   
+        $response = array('status' => 'fail');
         echo json_encode($response);
     } else {
-        $response = array('status' => 'success');   
+        $response = array('status' => 'success');
         echo json_encode($response);
     }
 };
@@ -391,7 +391,7 @@ function sendMailQOL() {
     //$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
     $mail->Username = "a365@ccihp.org";
     $mail->Password = "smartcare";
@@ -462,7 +462,7 @@ function sendMailQOL() {
     $mail->AddAddress($fields['email']);
     //$data = base64_decode($_POST['data']);
     $source = $_POST['source'];
-    
+
     include("vendor/mpdf/mpdf/mpdf.php");
     $c = array(
         // mode: 'c' for core fonts only, 'utf8-s' for subset etc.
@@ -487,15 +487,15 @@ function sendMailQOL() {
     $mpdf->WriteHTML($stylesheet, 1);
     $mpdf->WriteHTML($source, 2);
     $emailAttachment = $mpdf->Output('','S');
-    //$emailAttachment = chunk_split(base64_encode($emailAttachment)); 
+    //$emailAttachment = chunk_split(base64_encode($emailAttachment));
     //$mpdf->Output('/Users/duongquangvu/A365/a365_theme/filename.pdf','F');
     $filename = $_POST['testname'];
     $mail->AddStringAttachment($emailAttachment, $filename, 'base64', 'application/pdf');
     if(!$mail->Send()) {
-        $response = array('status' => 'fail');   
+        $response = array('status' => 'fail');
         echo json_encode($response);
     } else {
-        $response = array('status' => 'success');   
+        $response = array('status' => 'success');
         echo json_encode($response);
     }
 };
@@ -512,7 +512,7 @@ function sendMailTheoDoi() {
     //$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
     $mail->Username = "a365@ccihp.org";
     $mail->Password = "smartcare";
@@ -583,7 +583,7 @@ function sendMailTheoDoi() {
     $mail->AddAddress($fields['email']);
     //$data = base64_decode($_POST['data']);
     $source = $_POST['source'];
-    
+
     include("vendor/mpdf/mpdf/mpdf.php");
     $c = array(
         // mode: 'c' for core fonts only, 'utf8-s' for subset etc.
@@ -608,15 +608,15 @@ function sendMailTheoDoi() {
     $mpdf->WriteHTML($stylesheet, 1);
     $mpdf->WriteHTML($source, 2);
     $emailAttachment = $mpdf->Output('','S');
-    //$emailAttachment = chunk_split(base64_encode($emailAttachment)); 
+    //$emailAttachment = chunk_split(base64_encode($emailAttachment));
     //$mpdf->Output('/Users/duongquangvu/A365/a365_theme/filename.pdf','F');
     $filename = $_POST['testname'];
     $mail->AddStringAttachment($emailAttachment, $filename, 'base64', 'application/pdf');
     if(!$mail->Send()) {
-        $response = array('status' => 'fail');   
+        $response = array('status' => 'fail');
         echo json_encode($response);
     } else {
-        $response = array('status' => 'success');   
+        $response = array('status' => 'success');
         echo json_encode($response);
     }
 };
@@ -633,7 +633,7 @@ function sendMailATEC() {
     //$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
     $mail->Username = "a365@ccihp.org";
     $mail->Password = "smartcare";
@@ -704,7 +704,7 @@ function sendMailATEC() {
     $mail->AddAddress($fields['email']);
     //$data = base64_decode($_POST['data']);
     $source = $_POST['source'];
-    
+
     include("vendor/mpdf/mpdf/mpdf.php");
     $c = array(
         // mode: 'c' for core fonts only, 'utf8-s' for subset etc.
@@ -729,15 +729,15 @@ function sendMailATEC() {
     $mpdf->WriteHTML($stylesheet, 1);
     $mpdf->WriteHTML($source, 2);
     $emailAttachment = $mpdf->Output('','S');
-    //$emailAttachment = chunk_split(base64_encode($emailAttachment)); 
+    //$emailAttachment = chunk_split(base64_encode($emailAttachment));
     //$mpdf->Output('/Users/duongquangvu/A365/a365_theme/filename.pdf','F');
     $filename = $_POST['testname'];
     $mail->AddStringAttachment($emailAttachment, $filename, 'base64', 'application/pdf');
     if(!$mail->Send()) {
-        $response = array('status' => 'fail');   
+        $response = array('status' => 'fail');
         echo json_encode($response);
     } else {
-        $response = array('status' => 'success');   
+        $response = array('status' => 'success');
         echo json_encode($response);
     }
 };

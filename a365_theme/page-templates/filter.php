@@ -13,7 +13,7 @@ the_content();
 		<p><b>Hai bộ công cụ được sử dụng để sàng lọc phát triển và tự kỷ </b></p>
 		<div class="row">
 			<div class="col-xs-12 col-sm-3 col-md-2 text-right-sm">
-				<p><a href="<?php echo get_site_url().'/sang-loc/?ASQ=1' ?>"><b>ASQ</b></a></p>
+				<p><a href="<?php echo get_site_url().'/sang-loc/?ASQ=1' ?>"><b>ASQ®</b></a></p>
 			</div>
 			<div class="col-xs-12 col-sm-9 col-md-10">
 				<p>Theo dõi sự phát triển toàn diện của trẻ từ 9-48 tháng tuổi ở 5 lĩnh vực: Giao tiếp, Vận động tinh, Vận động thô, Cá nhân - Xã hội, Giải quyết vấn đề</p>
@@ -29,7 +29,7 @@ the_content();
 		</div>
 		<div class="triangle"></div>
 	</div>
-	
+
 	<?php if(!is_user_logged_in()) : ?>
 
 	<h2 class="text-center c-red fw800">Tại sao bạn nên đăng nhập khi làm bài sàng lọc?</h2>

@@ -1,11 +1,11 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
   /**
-   * Template Name: ASQ Continue
+   * Template Name: ASQ® Continue
    *
    * @package A356
    */
-  
+
   get_header('new');
   date_default_timezone_set('Asia/Ho_Chi_Minh');
   $current_child_obj = $_SESSION['current_child'];
@@ -25,13 +25,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <div class="modal-content">
             <div class="modal-header" style="background-color: #eeecec">
                 <div class="tit_popup" align="left">
-                   <p style="text-align: center;"><span style="font-size: 10pt;"><strong>Hiện tại A365 chỉ có các bộ công cụ sàng lọc dành cho trẻ từ 9-48 tháng tuổi (đã được điều chỉnh theo tuần sinh của trẻ). Bạn hãy quay lại làm bài khi có trẻ ở trong độ tuổi này. Xem thêm về bộ ASQ tại <a href="../sang-loc/" target="blank">đây</a></strong></span></p>
+                   <p style="text-align: center;"><span style="font-size: 10pt;"><strong>Hiện tại A365 chỉ có các bộ công cụ sàng lọc dành cho trẻ từ 9-48 tháng tuổi (đã được điều chỉnh theo tuần sinh của trẻ). Bạn hãy quay lại làm bài khi có trẻ ở trong độ tuổi này. Xem thêm về bộ ASQ® tại <a href="../sang-loc/" target="blank">đây</a></strong></span></p>
             </div>
         </div>
         <div class="modal-footer" style="text-align: center;">
                 <p>
           <br/>
-          <button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>            
+          <button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>
         </p>
             </div>
         </div>
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 <script type="text/javascript">
   var $=jQuery.noConflict();
   var child_month_age = <?=$child_month_age?>;
-  
+
   var user_id = "<?=a365_get_current_user_id()?>";
   //console.log(user_id);
   var login = 1;
@@ -64,27 +64,27 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   function load_quest_next(actionQuest, myRadio, id_complete) {
   set_id = id_complete;
   var lang = 'vn';
-  var obj = JSON.parse(actionQuest);        
+  var obj = JSON.parse(actionQuest);
   if (obj[myRadio.value].quest_next == 'NO') {
   $("#" + id_complete).val(1);
   }
-  
+
   if (obj[myRadio.value].quest_next == 'YES') {
   $("#" + id_complete).val(0);
   }
-  
+
   if (obj[myRadio.value].quest_next == '') {
   $("#" + id_complete).val(0);
   } else {
   $("#" + id_complete).val(obj[myRadio.value].quest_next + '&' + id_complete);
   //load_quest_extra();
   }
-  
+
   }
 </script>
 <div id="siteContent">
   <div class="container">
-    <div class="qh-page-header">Bộ câu hỏi đánh giá phát triển theo độ tuổi (ASQ)</div>
+    <div class="qh-page-header">Bộ câu hỏi đánh giá phát triển theo độ tuổi (ASQ®)</div>
     <div class="qh-jumbotron mg-b15">
       <p><li>Với mỗi hoạt động, hãy đánh dấu vào ô <b>CÓ</b> (nếu trẻ thực hiện thường xuyên), <b>THỈNH THOẢNG</b> (nếu trẻ thỉnh thoảng thực hiện được hoạt động) và <b>CHƯA</b> (nếu trẻ chưa thực hiện được hoạt động).</li></p>
       <p><li>Bạn cần để cho trẻ thực hiện thử mỗi hoạt động trước khi bạn đánh dấu vào ô.</li></p>
@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     <div class="row">
       <div class="col-xs-12 col-sm-6 mg-t10 mg-b10">
         <div class="child-month fw700 c-red text-uppercase">
-           Bài ASQ <?php echo $_SESSION['asq_set']  ?> tháng tuổi</div>
+           Bài ASQ® <?php echo $_SESSION['asq_set']  ?> tháng tuổi</div>
       </div>
 
       <div class="col-xs-12 col-sm-6 mg-t10 mg-b10 text-right-sm">Ngày làm: <?php echo date('d-m-Y') ?></div>
@@ -141,7 +141,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             var numberset = [];
           </script>
           <?php
-          
+
             $main_array = get_asq_questions($_SESSION['asq_set']);
             ?>
           <script>
@@ -181,7 +181,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 }
                 echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
                   echo '<div class="single-question">';
-                    echo '<div class="question-text">' ;               
+                    echo '<div class="question-text">' ;
                       echo '<p class="question"><b>Câu ' . $count . ':</b> '. $quest->q_content . '</p>';
                       if($quest->q_img){
                           echo '<img alt="" class="img_dai" src="'. plugins_url( 'a365_plugin/assets/img/asq/'.$quest->q_img ).'"/>';
@@ -271,7 +271,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 }
                 echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
                   echo '<div class="single-question">';
-                    echo '<div class="question-text">' ;               
+                    echo '<div class="question-text">' ;
                       echo '<p class="question"><b>Câu ' . $count . ':</b> '. $quest->q_content . '</p>';
                       if($quest->q_img){
                           echo '<img alt="" class="img_dai" src="'. plugins_url( 'a365_plugin/assets/img/asq/'.$quest->q_img ).'"/>';
@@ -361,7 +361,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 }
                 echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
                   echo '<div class="single-question">';
-                    echo '<div class="question-text">' ;               
+                    echo '<div class="question-text">' ;
                       echo '<p class="question"><b>Câu ' . $count . ':</b> '. $quest->q_content . '</p>';
                       if($quest->q_img){
                           echo '<img alt="" class="img_dai" src="'. plugins_url( 'a365_plugin/assets/img/asq/'.$quest->q_img ).'"/>';
@@ -451,7 +451,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 }
                 echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
                   echo '<div class="single-question">';
-                    echo '<div class="question-text">' ;               
+                    echo '<div class="question-text">' ;
                       echo '<p class="question"><b>Câu ' . $count . ':</b> '. $quest->q_content . '</p>';
                       if($quest->q_img){
                           echo '<img alt="" class="img_dai" src="'. plugins_url( 'a365_plugin/assets/img/asq/'.$quest->q_img).'"/>';
@@ -541,7 +541,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 }
                 echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
                   echo '<div class="single-question">';
-                    echo '<div class="question-text">' ;               
+                    echo '<div class="question-text">' ;
                       echo '<p class="question"><b>Câu ' . $count . ':</b> '. $quest->q_content . '</p>';
                       if($quest->q_img){
                           echo '<img alt="" class="img_dai" src="'. plugins_url( 'a365_plugin/assets/img/asq/'.$quest->q_img).'"/>';
@@ -612,8 +612,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             foreach ($main_array[5] as $quest) {
                 $child_array = array();
                 array_push($child_array, $quest->q_content_id);
-            
-            
+
+
                 if(isset($_POST['tong_ket'.$count]) && $_POST['tong_ket'.$count]==1){
                     array_push($child_array, 'Có');
                 }
@@ -627,7 +627,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 array_push($child_array, $_POST['tong_ket'.$count.'text']);
                 }
                 array_push($result_array6, $child_array);
-            
+
                 echo '
                 <div class="tab-pane paging_list" id="paging_list'.$i.'">
                     ';
@@ -648,7 +648,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                         echo '
                         <div class="answer pt10">
                             <div class="input4Survey">
-                                <input class="tab_quest5 radio_check" id="tong_ket'.$count.'1" name="tong_ket['.$count.']" onclick="" type="radio" value="Có" '.gen_checkbox_tongket($result->cate_6_answers, $count-1, "Có").'"> 
+                                <input class="tab_quest5 radio_check" id="tong_ket'.$count.'1" name="tong_ket['.$count.']" onclick="" type="radio" value="Có" '.gen_checkbox_tongket($result->cate_6_answers, $count-1, "Có").'">
                                     <label class="color_red" for="tong_ket'.$count.'1">
                                         CÓ
                                     </label>
@@ -665,7 +665,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                             </input>
                         </div>
                         ';
-                            
+
                         echo '
                         <div class="textAreaSurvey">
                             <div class="input textarea">
@@ -683,8 +683,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 ';
                 $count++;
                 $i++;
-            
-            
+
+
             }
             ?>
           </form>
@@ -708,7 +708,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   // validate chỉ đc phép bỏ qua 4 câu
   var val = 0;
   function validate_tab(qty) {
-  
+
   //class="input1Survey tab_quest4"
       var tab = $('input[type=radio].tab_quest0:checked').length;
       var all = numberset[0];
@@ -716,91 +716,91 @@ if ( ! defined( 'ABSPATH' ) ) exit;
           not_check_double = false;
           alert('Bạn chỉ có thể bỏ trống ' + qty + ' câu trong 1 phần');
           page_tab(1);
-  
+
           return  false;
       }
-  
+
       var tab = $('input[type=radio].tab_quest1:checked').length;
       var all = numberset[1];
       if ((all - tab) > qty) {
           not_check_double = false;
           alert('Bạn chỉ có thể bỏ trống ' + qty + ' câu trong 1 phần');
           page_tab(2);
-  
+
           return  false;
       }
-  
+
       var tab = $('input[type=radio].tab_quest2:checked').length;
       var all = numberset[2];
       if ((all - tab) > qty) {
           not_check_double = false;
           alert('Bạn chỉ có thể bỏ trống ' + qty + ' câu trong 1 phần');
           page_tab(3);
-  
+
           return  false;
       }
-  
+
       var tab = $('input[type=radio].tab_quest3:checked').length;
       var all = numberset[3];
       if ((all - tab) > qty) {
           not_check_double = false;
           alert('Bạn chỉ có thể bỏ trống ' + qty + ' câu trong 1 phần');
           page_tab(4);
-  
+
           return  false;
       }
-  
+
       var tab = $('input[type=radio].tab_quest4:checked').length;
       var all = numberset[4];
       if ((all - tab) > qty) {
           not_check_double = false;
           alert('Bạn chỉ có thể bỏ trống ' + qty + ' câu trong 1 phần');
           page_tab(5);
-  
+
           return  false;
       }
-  
+
       var tab = $('input[type=radio].tab_quest5:checked').length;
       var all = numberset[5];
       if ((all - tab) > qty) {
           not_check_double = false;
           alert('Bạn chỉ có thể bỏ trống ' + qty + ' câu trong 1 phần');
           page_tab(6);
-  
+
           return  false;
       }
       return true;
   }
-  
-  
+
+
   function validate_tab_survey(qty) {
       var redective = 99999;
-  
+
       for (s = 1; s < number_quest; s++) {
           if ($(".name_radio" + s + ":radio").is(':checked')) {
-  
+
           } else {
               redective = Math.round(s / number + 0.49);
               break;
           }
       }
-  
-  
+
+
       if (redective != 99999) {
           not_check_double = false;
-  
+
           alert("Bạn cần phải chọn hết câu hỏi");
           page_tab((redective - 1));
-  
+
           return  false;
       }
-  
+
       return true;
   }
-  
+
   // khi click submit
   function validateForm() {
-  
+
       if (not_check_double) {
           return false;
       }
@@ -833,7 +833,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                       $('#load_quest').html(response);
                   }
               },
-              error     : function (e) {                    
+              error     : function (e) {
                   //console.log(e);
               }
           });
@@ -860,24 +860,24 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   $('.number_step').html(text_add_time);
   return;
   }
-  
+
   //$(".submit_begin").hide();
-  
+
   var data = $('#box-paing');
   var page = 1;
   var stt = data.find('.paging_list').length;
   for (i = 0; i < stt; i++) {
   $('#paging_list' + i).hide();
   }
-  
+
   var number = <?php echo count($main_array[0])+1 ?>;
   var size_z = (stt / number) * 10;
   var page_set_timer_z = Math.round((stt / number) + 0.45);
-  
-  
+
+
   var start = (page - 1) * number;
   var stop = page * number;
-  
+
   for (start; start < stop; start++) {
   $('#paging_list' + start).show();
   }
@@ -886,13 +886,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   } else {
   $(".submit_begin").hide();
   }
-  
+
   //$('.nex-button-one')
-  
+
   $('#nex-button-one').addClass("select_hover");
   //
-  
-  
+
+
   var page_set = 1;
   function prev_page() {
   if (page_set <= 1) {
@@ -906,14 +906,14 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   $("ul.idTabs li").removeClass("active");
   var number_start = 0;
   var number_stop = 0;
-  
+
   switch (page_set) {
   case  1:
   $("#li_tab1").addClass("active");
   number_start = 0;
   number_stop = number0;
-  
-  
+
+
   break;
   case  2:
   $("#li_tab2").addClass("active");
@@ -958,7 +958,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   }
   //save_ajax();
   }
-  
+
   //next
   function next_page() {
     if (page_set >= 6) {
@@ -969,7 +969,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     if (page_set >= 6) {
     $('#nex-button-one').removeClass("select_hover");
     }
-    
+
     $("ul.idTabs li").removeClass("active");
     var number_start = 0;
     var number_stop = 0;
@@ -1005,7 +1005,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     number_stop = number0 + number1 + number2 + number3 + number4 + number5;
     break;
     }
-    
+
     var data = $('#box-paing');
     var stt = data.find('.paging_list').length;
     for (i = 0; i < stt; i++) {
@@ -1025,7 +1025,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   }
   // next page
     function page_tab(page) {
-  
+
   if (page <= 1) {
   $("#prv-button-one").removeClass("select_hover");
   } else {
@@ -1086,18 +1086,18 @@ if ( ! defined( 'ABSPATH' ) ) exit;
   }
   var start = number_start;
   var stop = number_stop;
-  
-  
+
+
   for (start; start < stop; start++) {
   $('#paging_list' + start).show();
   }
-  
+
   if (stop >= stt) {
   $(".submit_begin").show();
   } else {
   $(".submit_begin").hide();
   }
-  
+
   //save_ajax();
   }
 </script>

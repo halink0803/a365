@@ -33,7 +33,7 @@ $main_array = get_asq_questions($month_test);
             <img width="100%" src="<?php echo get_template_directory_uri().'/images/banner_ASQtest1447039562.jpg'?>" title="asq-banner">
             <div class="inforGuideSurvey pd20">
                 <h1 class="ResultTitle" style="color:#ca2535">
-                    Bài ASQ <?php echo $month_test ?> tháng tuổi
+                    Bài ASQ® <?php echo $month_test ?> tháng tuổi
                 </h1>
                 <div class="ResultSurvey" >
                     <div class="" style="background-color: #eeecec">
@@ -73,8 +73,8 @@ $main_array = get_asq_questions($month_test);
                 </div>
                     <div class="ReBlock ReBlock1" >
                         <p>
-                            <h3 class="TxtBoldUp fz15" style="color:#ca2535">1. GIẢI THÍCH VỀ BẢNG HỎI ASQ : </h3>
-                            <p>ASQ là hệ thống câu hỏi dành cho cha mẹ/người chăm sóc trẻ tự điền nhằm sàng lọc và theo dõi sự phát triển toàn diện và phát hiện sớm các rối loạn phát triển ở trẻ. ASQ sàng lọc và theo dõi 5 lĩnh vực phát triển: Giao tiếp, vận động thô, vận động tinh, giải quyết vấn đề, và cá nhân - xã hội. Mỗi lĩnh vực ở một độ tuổi nhất định có một ngưỡng giới hạn.</p>
+                            <h3 class="TxtBoldUp fz15" style="color:#ca2535">1. GIẢI THÍCH VỀ BẢNG HỎI ASQ® : </h3>
+                            <p>ASQ® là hệ thống câu hỏi dành cho cha mẹ/người chăm sóc trẻ tự điền nhằm sàng lọc và theo dõi sự phát triển toàn diện và phát hiện sớm các rối loạn phát triển ở trẻ. ASQ® sàng lọc và theo dõi 5 lĩnh vực phát triển: Giao tiếp, vận động thô, vận động tinh, giải quyết vấn đề, và cá nhân - xã hội. Mỗi lĩnh vực ở một độ tuổi nhất định có một ngưỡng giới hạn.</p>
                             <table class="gtkyhieu">
                                 <tbody>
                                     <tr>

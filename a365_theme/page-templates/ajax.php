@@ -8,7 +8,7 @@ get_header('admin');
 ?>
 <?php
 	require_once( "db-interaction.php" );
-	
+
 	if($_GET['table']=="a365_children"){
 		$obj2 = new ajax_table("a365_children");
     	$records2 = $obj2->getRecordsForChidrenManagerById($_GET['q']);
@@ -43,10 +43,10 @@ get_header('admin');
         <tbody>
         ';
        	if(count($records2)){
-            $i = 1;    
+            $i = 1;
             foreach($records2 as $key=>$eachRecord){
-               
-       
+
+
             echo    '<tr id="'.$eachRecord['id'].'">';
             echo    '<td>'.$eachRecord['id'].'</td>';
             echo    '<td class="name">'.$eachRecord['name'].'</td>';
@@ -98,9 +98,9 @@ get_header('admin');
         <tbody>
         ';
        	if(count($records2)){
-            $i = 1;    
+            $i = 1;
             foreach($records2 as $key=>$eachRecord){
-       
+
             echo    '<tr id="'.$eachRecord['id'].'">';
             echo    '<td>'.$eachRecord['id'].'</td>';
             echo    '<td class="name">'.$eachRecord['name'].'</td>';
@@ -147,13 +147,13 @@ get_header('admin');
         <tbody>
         ';
         if(count($records3)){
-            $i = 1;    
+            $i = 1;
             foreach($records3 as $key=>$eachRecord){
-       
+
             echo '<tr id="'.$eachRecord['creator_id'].'">';
             echo    '<td>'.$eachRecord['creator_id'].'</td>';
             echo    '<td class="creator_id">'.$eachRecord['name'].'</td>';
-            echo    '<td class="created_order"> ASQ '.$eachRecord['asq_set'].' tháng</td>';
+            echo    '<td class="created_order"> ASQ® '.$eachRecord['asq_set'].' tháng</td>';
             echo    '<td class="name">'.$eachRecord['begin_at'].'</td>';
             if($eachRecord['end_at']!= NULL)
                 echo "<td>Đã hoàn thành</td>";
@@ -164,9 +164,9 @@ get_header('admin');
             }
         }
         if(count($records4)){
-            $i = 1;    
+            $i = 1;
             foreach($records4 as $key=>$eachRecord){
-       
+
             echo '<tr id="'.$eachRecord['creator_id'].'">';
             echo    '<td>'.$eachRecord['creator_id'].'</td>';
             echo    '<td class="creator_id">'.$eachRecord['name'].'</td>';
@@ -181,9 +181,9 @@ get_header('admin');
             }
         }
         if(count($records5)){
-            $i = 1;    
+            $i = 1;
             foreach($records5 as $key=>$eachRecord){
-       
+
             echo '<tr id="'.$eachRecord['creator_id'].'">';
             echo    '<td>'.$eachRecord['creator_id'].'</td>';
             echo    '<td class="creator_id">'.$eachRecord['name'].'</td>';
@@ -198,9 +198,9 @@ get_header('admin');
             }
         }
         if(count($records6)){
-            $i = 1;    
+            $i = 1;
             foreach($records6 as $key=>$eachRecord){
-       
+
             echo '<tr id="'.$eachRecord['creator_id'].'">';
             echo    '<td>'.$eachRecord['creator_id'].'</td>';
             echo    '<td class="creator_id">'.$eachRecord['name'].'</td>';
@@ -216,11 +216,11 @@ get_header('admin');
         }
         echo '</tbody></table>';
     }
-    
+
 
 
 	if(isset($_POST) && count($_POST)){
-		
+
 		// whats the action ??
 
 		$action = $_POST['action'];
@@ -233,15 +233,15 @@ get_header('admin');
 
 		$obj = new ajax_table($table_name);
 
-		if($action == "save"){		
+		if($action == "save"){
 			// remove 'action' key from array, we no longer need it
 
 			// Never ever believe on end user, he could be a evil minded
 			$escapedPost = array_map('mysql_real_escape_string', $_POST);
 			$escapedPost = array_map('htmlentities', $escapedPost);
-				
+
 			$res = $obj->save($escapedPost);
-			
+
 			if($res){
 				$escapedPost["success"] = "1";
 				$escapedPost["id"] = $res;
@@ -253,29 +253,29 @@ get_header('admin');
 			$id = $_POST['rid'];
 			$res = $obj->delete_record($id);
 			if($res)
-				echo json_encode(array("success" => "1","id" => $id));	
+				echo json_encode(array("success" => "1","id" => $id));
 			else
 				echo $obj->error("delete");
 		}
 		else if($action == "update"){
-			
+
 			$escapedPost = array_map('mysql_real_escape_string', $_POST);
 			$escapedPost = array_map('htmlentities', $escapedPost);
 
 			$id = $obj->update_record($escapedPost);
 			if($id)
-				echo json_encode(array_merge(array("success" => "1","id" => $id),$escapedPost));	
+				echo json_encode(array_merge(array("success" => "1","id" => $id),$escapedPost));
 			else
 				echo $obj->error("update");
 		}
 		else if($action == "updatetd"){
-			
+
 			$escapedPost = array_map('mysql_real_escape_string', $_POST);
 			$escapedPost = array_map('htmlentities', $escapedPost);
 
 			$id = $obj->update_column($escapedPost);
 			if($id)
-				echo json_encode(array_merge(array("success" => "1","id" => $id),$escapedPost));	
+				echo json_encode(array_merge(array("success" => "1","id" => $id),$escapedPost));
 			else
 				echo $obj->error("updatetd");
 		}

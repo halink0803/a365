@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
  *
  * Template Name: History
- * 
+ *
  */
 get_header('new');
 $history = a365_get_children_history();
@@ -17,10 +17,10 @@ print_r($history);
 						<table class="table">
 						 	<thead>
 						 		<tr>
-						 			<th class="child-checkbox"></th> 
-							 		<th class="child-test-date">Ngày làm bài</th> 
-							 		<th class="child-test-type">Bài sàng lọc</th> 
-							 		<th class="child-test-status">Trạng thái</th> 
+						 			<th class="child-checkbox"></th>
+							 		<th class="child-test-date">Ngày làm bài</th>
+							 		<th class="child-test-type">Bài sàng lọc</th>
+							 		<th class="child-test-status">Trạng thái</th>
 						 		</tr>
 						 	</thead>
 						 	<tbody>
@@ -28,9 +28,9 @@ print_r($history);
 								 	<tr>
 							 			<td class="child-checkbox"><label class="row-data"><input type="radio" name="history" id="checkbox<?php echo $index ?>"></label></td>
 									 	<td class="child-test-date"><label class="row-data" for="checkbox<?php echo $index ?>"><?php echo $his->begin_at?></label></td>
-									 	<td class="child-test-type"><label class="row-data" for="checkbox<?php echo $index ?>"><?php 
+									 	<td class="child-test-type"><label class="row-data" for="checkbox<?php echo $index ?>"><?php
 									 		if( $his->type == 'asq' ) {
-									 			echo 'ASQ';
+									 			echo 'ASQ®';
 									 		} else if( $his->type == 'mchatr' ) {
 									 			echo 'M-CHAT R';
 									 		} else if( $his->type == 'mchatrf' ) {

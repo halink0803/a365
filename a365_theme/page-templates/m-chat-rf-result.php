@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                                     <br/>
                                     Mã số trẻ: <b><?php echo $child_information->id; ?></b>
                                     <br/>
-                                    Ngày sinh: <b><?php 
+                                    Ngày sinh: <b><?php
                                         $date = new DateTime( $child_information->date_of_birth);
                                         echo $date->format('d/m/Y')
                                     ?></b>
@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                                             echo " Kết quả cho thấy bạn không cần phải lo lắng nguy cơ tự kỷ của trẻ. Bạn chưa cần phải hành động gì trừ khi trong quá trình theo dõi bạn thấy lo lắng về sự phát triển hay các dấu hiệu nguy cơ tự kỷ của trẻ. Lúc đó hãy đến cơ sở y tế chuyên khoa nhi để thăm khám." . $message . " Lưu ý rằng M-CHAT-R/F chỉ là bộ công cụ sàng lọc để phát hiện trẻ có nguy cơ tự kỷ hay không. <b>Kết quả M-CHAT-R/F không phải là kết quả chẩn đoán</b>.";
                                             break;
                                         default:
-                                            echo " Kết quả của sàng lọc cho thấy trẻ có nguy cơ tự kỷ. Bạn nên đến các cơ sở có uy tín về đánh giá và chẩn đoán tự kỷ để xác định tình trạng của con mình. Bạn có thể tìm thấy tên và địa chỉ của các cơ sở theo <a style='color: #1478b9;' href='http://a365.vn/chan-doan-tu-ky/?listClinic=1'>đường link này</a>. Bạn hãy mang theo kết quả đánh giá phát triển theo độ tuổi (ASQ - nếu có) và bản kết quả này khi đến cơ sở y tế. Lưu ý rằng M-CHAT-R/F chỉ là bộ công cụ sàng lọc để phát hiện trẻ có nguy cơ tự kỷ hay không. <b>Kết quả M-CHAT-R/F không phải là kết quả chẩn đoán</b>.";
+                                            echo " Kết quả của sàng lọc cho thấy trẻ có nguy cơ tự kỷ. Bạn nên đến các cơ sở có uy tín về đánh giá và chẩn đoán tự kỷ để xác định tình trạng của con mình. Bạn có thể tìm thấy tên và địa chỉ của các cơ sở theo <a style='color: #1478b9;' href='http://a365.vn/chan-doan-tu-ky/?listClinic=1'>đường link này</a>. Bạn hãy mang theo kết quả đánh giá phát triển theo độ tuổi (ASQ® - nếu có) và bản kết quả này khi đến cơ sở y tế. Lưu ý rằng M-CHAT-R/F chỉ là bộ công cụ sàng lọc để phát hiện trẻ có nguy cơ tự kỷ hay không. <b>Kết quả M-CHAT-R/F không phải là kết quả chẩn đoán</b>.";
                                             break;
                                     }
                                 ?>
@@ -101,9 +101,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                                         </div>
                                     </div>
                                 </div>
-                                <?php 
+                                <?php
                                     $questions = mchatr_get_questions();
-                                    for($i=0; $i<20; $i++): 
+                                    for($i=0; $i<20; $i++):
                                         $current = 'answer_' . strval($i + 1);
                                 ?>
                                     <div class="single-question">
@@ -111,7 +111,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                                         <div class="question-answer">
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="question-<?php echo $i+1;?>" 
+                                                    <input type="radio" name="question-<?php echo $i+1;?>"
                                                     <?php if($results[0]->$current == 1) echo "checked" ?> value="1" disabled="disabled"><span class="label-text">Đạt</span>
                                                 </label>
                                             </div>
@@ -129,7 +129,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                         </div>
                     </div>
                 </div>
-                <!-- <?php 
+                <!-- <?php
                     // print_r($results[0]);
                     for($i = 1; $i <=20; $i++) {
                         for($j = 0; $j <=3; $j++) {
@@ -171,7 +171,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             </div>
         </div>
     </div>
-    
+
 </body>
 <script type="text/javascript">
     function printDiv() {
@@ -183,19 +183,19 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     }
 
     function send() {
-      
+
         var oEl = document.getElementById('siteContent');
         // Getting the outerHTML of an element:
         var sOuterHTML = oEl.outerHTML;
         var data = encodeURIComponent(sOuterHTML);
         //console.log(data);
 
-        $.post("../send-email", 
-                {   
+        $.post("../send-email",
+                {
                     'testname' : 'mchatrf',
                     'source' : data,
                     'field': $('#send_mail_form').serialize()
-                }, 
+                },
                 function() {
                     //alert("Email đã được gửi thành công!");
                 }).success(
@@ -215,14 +215,14 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     var $=jQuery.noConflict();
     $(document).ready(function(){
 
-        var user_check = <?php 
-                            if(checkUserType()==true) 
+        var user_check = <?php
+                            if(checkUserType()==true)
                                 echo "true";
                             else
                                 echo "false";
                         ?>;
         //console.log(user_check);
-        
+
         if (user_check == true) {
             $("#Modal_Respondent").modal({
                 backdrop: 'static',
@@ -260,7 +260,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                       success: function(response) {
                         $("#Modal_Respondent").modal('hide');
                       }
-                      
+
                     });
                 }
             });

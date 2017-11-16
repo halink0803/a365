@@ -80,9 +80,9 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
         <div id="page-wrapper">
 
             <div class="container-fluid">
-            
+
     <ul class="tabs">
-        <li><a href="#view1">ASQ</a></li>
+        <li><a href="#view1">ASQ®</a></li>
         <li><a href="#view2">MCHAT R</a></li>
         <li><a href="#view3">MCHAT R/F</a></li>
     </ul>
@@ -433,7 +433,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
                 </tfoot>
             </table>
         </div>
-    </div>  
+    </div>
             </div>
         </div>
 
@@ -441,15 +441,15 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
 
     </div>
     <script>
-     
-     // Set button class names 
+
+     // Set button class names
      var savebutton = "ajaxSave";
      var deletebutton = "ajaxDelete";
      var editbutton = "ajaxEdit";
      var updatebutton = "ajaxUpdate";
      var cancelbutton = "cancel";
      var viewbutton = "ajaxView";
-     
+
      var saveImage = "<?php echo get_template_directory_uri()."/images/save.png" ?>";
      var editImage = "<?php echo get_template_directory_uri()."/images/edit.png" ?>";
      var deleteImage = "<?php echo get_template_directory_uri()."/images/remove.png" ?>";
@@ -457,12 +457,12 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
      var updateImage = "<?php echo get_template_directory_uri()."/images/save.png" ?>";
 
      // Set highlight animation delay (higher the value longer will be the animation)
-     var saveAnimationDelay = 3000; 
+     var saveAnimationDelay = 3000;
      var deleteAnimationDelay = 1000;
-      
+
      // 2 effects available available 1) slide 2) flash
-     var effect = "flash"; 
-  
+     var effect = "flash";
+
   </script>
 <script>
     var asq_table;
@@ -474,7 +474,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
             var title = $(this).text();
             $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
         } );
-     
+
         // DataTable
         asq_table = $('#a365_asq_results').DataTable({
         "ajax": "../asq-report.txt",
@@ -530,7 +530,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
         "scrollY": 200,
         dom: 'BCfrtlip',
         select: true,
-        buttons: [      
+        buttons: [
             {
                 extend: 'collection',
                 text: 'Xuất dữ liệu',
@@ -570,14 +570,14 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
                 ]
                 //'copy', 'csv', 'excel', 'pdf']
             }
-            
+
         ]
     });
 
         // Apply the search
         asq_table.columns().every( function () {
             var that = this;
-     
+
             $( 'input', this.footer() ).on( 'keyup change', function () {
                 if ( that.search() !== this.value ) {
                     that
@@ -593,7 +593,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
             var title = $(this).text();
             $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
         } );
-     
+
         // DataTable
         mchatr_table = $('#a365_mchatr_results').DataTable({
             "ajax": "../mchatr-report.txt",
@@ -654,7 +654,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
         dom: 'BCfrtlip',
         select: true,
         buttons: [
-      
+
             {
                 extend: 'collection',
                 text: 'Xuất dữ liệu',
@@ -694,13 +694,13 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
                 ]
                 //'copy', 'csv', 'excel', 'pdf']
             }
-            
+
         ]
     });
         // Apply the search
         mchatr_table.columns().every( function () {
             var that = this;
-     
+
             $( 'input', this.footer() ).on( 'keyup change', function () {
                 if ( that.search() !== this.value ) {
                     that
@@ -709,14 +709,14 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
                 }
             } );
         } );
- 
+
 
     //mchatrf
     $('#a365_mchatrf_results tfoot th').each( function () {
             var title = $(this).text();
             $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
         } );
-     
+
         // DataTable
         mchatrf_table = $('#a365_mchatrf_results').DataTable({
         "ajax": "../mchatrf-report.txt",
@@ -771,7 +771,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
         dom: 'BCfrtlip',
         select: true,
         buttons: [
-   
+
             {
                 extend: 'collection',
                 text: 'Xuất dữ liệu',
@@ -811,7 +811,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
                 ]
                 //'copy', 'csv', 'excel', 'pdf']
             }
-            
+
         ]
     });
 
@@ -819,7 +819,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
         // Apply the search
         mchatrf_table.columns().every( function () {
             var that = this;
-     
+
             $( 'input', this.footer() ).on( 'keyup change', function () {
                 if ( that.search() !== this.value ) {
                     that
@@ -828,7 +828,7 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
                 }
             } );
         } );
-   
+
 
     /* Custom filtering function which will search data in column four between two values */
     $.fn.dataTable.ext.search.push(
@@ -883,13 +883,13 @@ $records3 = $obj3->getRecordsForAdminMchatrfReport();
                 }
                 return false;
             }
-            
+
         }
     );
-     
+
     $(document).ready(function() {
         //var table = $('#a365_users').DataTable();
-         
+
         // Event listener to the two range filtering inputs to redraw on input
         $('#min, #max').keyup( function() {
             asq_table.draw();
