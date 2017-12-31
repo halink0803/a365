@@ -392,6 +392,22 @@
 								<label class="radio-inline"><input type="radio" name="did_at" value="Khác">Khác</label>
 							</div>
 						</div>
+                        <div class="qh-form-row">
+                            <label class="qh-label">
+                               <span class="align"></span><span class="text">Anh/chị biết đến A365 từ nguồn nào? (*)</span>
+                            </label>
+                            <div class="input-wrap">
+                               <select name="source" id="source" class="select_contact qh-form-control" onchange="add_option()">
+                                  <option value="" style="width:auto">Chọn nguồn</option>
+                                  <option value="social networks">Mạng xã hội (facebook)</option>
+                                  <option value="internet">Trên internet (tìm kiếm trên Google, đọc báo mạng, ...)</option>
+                                  <option value="newspaper">Báo, đài, ti vi, tờ rơi, áp phích</option>
+                                  <option value="introduced">Được người khác giới thiệu</option>
+                                  <option value="Khác">Khác</option>
+                               </select>
+                               <!-- <input name="other_relationship" placeholder="Nhập mối quan hệ với trẻ" class="input_contact qh-form-control" type="text" id="UserJobAdd" style="display: none"> -->
+                            </div>
+                        </div>
 
 					<div class="qh-form-row">
 						<div class="input-wrap">
@@ -615,12 +631,11 @@
    		//your code here
    		var option = $('#role_user option:selected').val();
    		//.log(option);
-   		if (option == 'Khác') {
-   			$('#UserJobAdd').removeClass('hidden');
-   		}
-   		else
-   			$('#UserJobAdd').addClass('hidden');
-
+   		// if (option == 'Khác') {
+   		// 	$('#UserJobAdd').removeClass('hidden');
+   		// }
+   		// else
+   		// 	$('#UserJobAdd').addClass('hidden');
 	};
 
 	function add_option_2() {
