@@ -321,6 +321,63 @@
 
 	            		</div>
 	        		 </div>
+                     <div class="qh-form-row">
+                            <label class="qh-label"><span class="align"></span><span class="text">Trẻ đã từng được chẩn đoán tự kỷ chưa?</span></label>
+                            <div class="input-wrap diagnose-information">
+                                <label class="radio-inline"><input id="detected" name="checked" type="radio" value="1" required> Rồi</label>
+                                <label class="radio-inline"><input name="checked" type="radio" value="0" required> Chưa</label>
+                            </div>
+                        </div>
+                        <div class="qh-form-row diagnose-result hidden">
+                            <label class="qh-label"><span class="align"></span><span class="text">Kết quả chẩn đoán của trẻ</span></label>
+                            <div class="input-wrap">
+                                <select name="status" class="qh-form-control" required>
+                                    <option value="Rối loạn tự kỷ/Tự kỷ">Rối loạn tự kỷ/Tự kỷ</option>
+                                    <option value="Rối loạn phát triển lan tỏa">Rối loạn phát triển lan tỏa</option>
+                                    <option value="Theo dõi tự kỷ">Theo dõi tự kỷ</option>
+                                    <option value="Rối loạn phát triển">Rối loạn phát triển</option>
+                                    <option value="Chậm phát triển/ Theo dõi chậm phát triển">Chậm phát triển/ Theo dõi chậm phát triển</option>
+                                    <option value="Không tự kỷ">Không tự kỷ</option>
+                                    <option value="Khác">Khác</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="qh-form-row diagnose-age hidden">
+                            <label class="qh-label"><span class="align"></span><span class="text">Tuổi của trẻ tại thời điểm được chẩn đoán (*)</span></label>
+                            <div class="input-wrap">
+                                <input name="birthage" id="birthage" type="text" class="qh-form-control iblock" style="width: 65px;">
+                                <span>tháng tuổi</span>
+                            </div>
+                        </div>
+                        <div class="qh-form-row diagnose-place hidden">
+                            <label class="qh-label"><span class="align"></span><span class="text">Nơi chẩn đoán</span></label>
+                            <div class="input-wrap">
+                                <select name="hospital" class="qh-form-control" required>
+                                    <option value="Bệnh viện Nhi Trung Ương">Bệnh viện Nhi Trung Ương</option>
+                                    <option value="Bệnh viện Đại học Y">Bệnh viện Đại học Y</option>
+                                    <option value="Bệnh viện Nhi Đồng 1">Bệnh viện Nhi Đồng 1</option>
+                                    <option value="Bệnh viện Nhi Đồng 2">Bệnh viện Nhi Đồng 2</option>
+                                    <option value="Bệnh viện Tỉnh">Bệnh viện Tỉnh</option>
+                                    <option value="Trung tâm Can thiệp">Trung tâm Can thiệp</option>
+                                    <option value="Khác">Khác</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="qh-form-row diagnose-person hidden">
+                            <label class="qh-label"><span class="align"></span><span class="text">Người chẩn đoán</span></label>
+                            <div class="input-wrap">
+                                <select name="doctor" class="qh-form-control" required>
+                                    <option value="1">1. Bác sỹ chuyên khoa Nhi</option>
+                                    <option value="2">2. Bác sỹ đa khoa</option>
+                                    <option value="3">3. Cán bộ tâm lý</option>
+                                    <option value="4">4. Bác sỹ chuyên ngành khác</option>
+                                    <option value="5">5. Y tá/ Điều dưỡng</option>
+                                    <option value="6">6. Giáo viên mầm non</option>
+                                    <option value="7">7. Giáo viên Giáo dục đặc biệt</option>
+                                    <option value="8">8. Khác</option>
+                                </select>
+                            </div>
+                        </div>
 					<div class="qh-form-row">
 						<div class="input-wrap">
 							<div class="qh-help-text c-red mg-b20"><b><i id="notice"></i></b></div>
@@ -384,6 +441,12 @@
 								<input name="address" type="text" class="qh-form-control">
 							</div>
 						</div>
+                        <div class="qh-form-row">
+                            <label class="qh-label"><span class="align"></span><span class="text">Số điện thoại</span></label>
+                            <div class="input-wrap">
+                                <input name="phone" type="text" class="qh-form-control">
+                            </div>
+                        </div>
 						<div class="qh-form-row">
 							<label class="qh-label"><span class="align"></span><span class="text">Nơi làm sàng lọc (*)</span></label>
 							<div class="input-wrap">
