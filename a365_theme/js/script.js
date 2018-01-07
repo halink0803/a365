@@ -9,11 +9,11 @@ $(document).ready(function(){
   //     action: 'update_user_using_time',
   //     type: 'post',
   //     url: a365_ajax.ajax_url,
-  //     success: function(msg) {                  
+  //     success: function(msg) {
   //     }
-  //   })    
+  //   })
   // }
-  
+
   //handle click to choose a child
   $('.child-checkbox input:radio').click(function() {
     var current_child_id = $(this).closest('tr').attr('id');
@@ -43,7 +43,7 @@ $(document).ready(function(){
           $('.tuky').addClass('disabled');
 
       }
-    })    
+    })
   });
 
   $('#childBirth').datepicker({dateFormat: 'dd-mm-yy'});
@@ -80,12 +80,12 @@ $(document).ready(function(){
         url: a365_ajax.ajax_url,
         data: $data + "&action=create_nologin_mchatr",
         success: function(response) {
-          //alert("gui thanh cong: "+response); 
+          //alert("gui thanh cong: "+response);
           window.location.href = response.page;
         },
         error: function (xhr, ajaxOptions, thrownError) {
-            alert(xhr.status); 
-        } 
+            alert(xhr.status);
+        }
       });
     }
   });
@@ -151,7 +151,7 @@ $(document).ready(function(){
                   error: function (xhr, ajaxOptions, thrownError) {
                       alert(xhr.status);
                       alert(thrownError);
-                  } 
+                  }
                 });
               }
             });
@@ -231,14 +231,14 @@ $(document).ready(function(){
 
   $('#number_per_page').change(function() {
     url = window.location.href;
-    number = $('#number_per_page option:selected').val();    
+    number = $('#number_per_page option:selected').val();
     url = updateQueryStringParameter(url, 'amount', number);
     window.location.href = url;
   });
 
   // do test without login
   $('.noLogin').click(function(event) {
-    $('#Modal_ASQ_Without_Login').modal('show');   
+    $('#Modal_ASQ_Without_Login').modal('show');
   });
 
   // do ASQ without login
@@ -265,12 +265,12 @@ $(document).ready(function(){
         url: a365_ajax.ajax_url,
         data: $data + "&action=create_nologin_asq",
         success: function(response) {
-          //alert("gui thanh cong: "+response); 
+          //alert("gui thanh cong: "+response);
           window.location.href = response.page;
         },
         error: function (xhr, ajaxOptions, thrownError) {
-            alert(xhr.status); 
-        } 
+            alert(xhr.status);
+        }
       });
     }
   });
@@ -292,7 +292,7 @@ $(document).ready(function(){
         });
 
         $('.get_result').click(function(event) {
-          var age = $("#age").val();
+          var age = $("#child_age").val();
           var role_user = $("#role_user").val();
           var gender = $("input[name='user_gender']:checked").val();
           var other_role = $("#UserJobAdd").val();
@@ -320,19 +320,19 @@ $(document).ready(function(){
                     url: a365_ajax.ajax_url,
                     data: $data + "&action=" + 'calculate_score',
                     success: function(response) {
-                      //alert("gui thanh cong: "+response); 
+                      //alert("gui thanh cong: "+response);
                       window.location.href = response.page;
                     },
                     error: function (xhr, ajaxOptions, thrownError) {
                         alert(xhr.status);
                         alert(thrownError);
-                    } 
+                    }
                   });
               },
               error: function (xhr, ajaxOptions, thrownError) {
                   alert(xhr.status);
                   alert(thrownError);
-              } 
+              }
             });
           }
         });
@@ -349,15 +349,15 @@ $(document).ready(function(){
           url: a365_ajax.ajax_url,
           data: $data + "&action=" + 'calculate_score',
           success: function(response) {
-            //alert("gui thanh cong: "+response); 
+            //alert("gui thanh cong: "+response);
             window.location.href = response.page;
           },
           error: function (xhr, ajaxOptions, thrownError) {
               alert(xhr.status);
               alert(thrownError);
-          } 
+          }
         });
-      
+
         }
       }
     }
@@ -446,7 +446,7 @@ $(document).ready(function(){
                 }
             } );
         } );
-        $('.child-history').removeClass('hidden');        
+        $('.child-history').removeClass('hidden');
       }, error: function(xhr, ajaxOptions, err) {
         //console.log(err);
       }
@@ -476,7 +476,7 @@ $(document).ready(function(){
       'test_type': test_type,
       'test_id': test_id
     }
-    $.ajax({      
+    $.ajax({
       type: 'post',
       dataType: 'json',
       url: a365_ajax.ajax_url,
@@ -486,14 +486,14 @@ $(document).ready(function(){
         if( test_type == 'asq' ) {
           link = $('.asq-result-link').attr('link');
           link2 = $('.asq-continue-link').attr('link');
-        } 
+        }
         else if( test_type == 'mchatr' ) {
           link = $('.mchatr-result-link').attr('link');
-        } 
+        }
         else if( test_type == 'qol' ) {
           link = $('.qol-result-link').attr('link');
           link2 = $('.qol-continue-link').attr('link');
-        } 
+        }
         else if( test_type == 'atec' ) {
           link = $('.atec-result-link').attr('link');
           link2 = $('.atec-continue-link').attr('link');
@@ -609,9 +609,9 @@ $(document).ready(function(){
             }
             $('.your-answer').empty().html('Câu trả lời của bạn: ' + answer);
           }
-        }, error: function(XMLHttpRequest, textStatus, errorThrown) { 
+        }, error: function(XMLHttpRequest, textStatus, errorThrown) {
             //console.log("Status: " + textStatus);
-            //console.log("Error: " + errorThrown); 
+            //console.log("Error: " + errorThrown);
         }
       });
     }
@@ -624,7 +624,7 @@ $(document).ready(function(){
 
 /**
  * Print result using browser options
- * @return null 
+ * @return null
  */
 function printDiv() {
   var divToPrint = document.getElementById('siteContent');
