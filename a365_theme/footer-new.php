@@ -409,7 +409,7 @@
 						<div class="qh-form-row">
 							<label class="qh-label"><span class="align"></span><span class="text">Năm sinh (*)</span></label>
 							<div class="input-wrap">
-								<input name="age" id="age" type="number" min="1900" value="1989" class="qh-form-control iblock" style="width: 75px;">
+								<input name="age" id="child_age" type="number" min="1900" value="1989" class="qh-form-control iblock" style="width: 75px;">
 							</div>
 						</div>
 						<div class="qh-form-row">
@@ -535,7 +535,7 @@
 				            	<span class="text">Khu vực (*)</span></label>
 				            <div class="input-wrap">
 
-					            <select name="area" id="area" class="select_contact qh-form-control" required>
+					            <select name="area" id="child_area" class="select_contact qh-form-control" required>
 					               	<option value="" style="width:auto">Chọn khu vực</option>
 					               	<?php $areas =  a365_get_areas(); ?>
 
