@@ -24,8 +24,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 // function get_child_info() {
 //   global $current_child;
 //   global $wpdb;
-//   $info = $wpdb->get_results("select * from a365_children where id = $current_child")[0];                   
-  
+//   $info = $wpdb->get_results("select * from a365_children where id = $current_child")[0];
+
 //   //print_r($info);
 //   return $info;
 // }
@@ -207,7 +207,7 @@ function calculate_score() {
       $pages = get_pages(array(
                           'meta_key' => '_wp_page_template',
                           'meta_value' => $page_template
-                      ));      
+                      ));
       // wp_redirect($pages[0]->guid, 301);
       // exit;
       echo json_encode(["page" => $pages[0]->guid]);
@@ -334,7 +334,7 @@ function generate_suggestion_1($month_test, $point_array) {
       '256'  => array('Không' => 'khả năng ngôn ngữ')
   );
 
-  $tongket_results;
+  $tongket_results = [];
   //print_r($id_array);
   if( isset( $_SESSION['tongket'] ) ) {
     if( $_SESSION['tongket'] != '' ) {
@@ -423,7 +423,7 @@ function generate_suggestion_1($month_test, $point_array) {
         ), array( 'id' => $_SESSION['asq_result_id']));
       echo "&#8226; Vì trẻ có sự phát triển chậm hơn các trẻ khác cùng độ tuổi, gia đình nên làm thêm câu hỏi sàng lọc tự kỷ M-CHAT-R theo đường link <a href = '../mchatr' style='color:#1478b9'><b>M-CHAT-R</b></a> để đánh giá về nguy cơ tự kỷ của trẻ.";
     }
-    
+
     if($child_month_age <= 10 && $child_month_age >= 1)
     echo "&#8226; Trẻ có sự phát triển chậm hơn các trẻ khác cùng độ tuổi, gia đình cần đưa trẻ đi khám trong thời gian sớm nhất.";
   }
@@ -581,7 +581,7 @@ function create_nologin_asq() {
                     )
                   );
     $asq_set = get_month_test(child_month_age($week_of_birth));
-    
+
      //echo "set: ".$asq_set;
     $_SESSION['asq_set'] = $asq_set;
     $_SESSION['current_user_id'] = $user_id;
@@ -589,7 +589,7 @@ function create_nologin_asq() {
     SELECT * FROM a365_children WHERE id = %s
     ", $current_child), OBJECT)[0];
     $_SESSION['child_month_age'] = child_month_age($week_of_birth);
-    
+
     // // create asq result in db
     // $wpdb->insert("a365_asq_results", array(
     //         'child_id' => $current_child,
@@ -655,12 +655,12 @@ function update_no_login_user_information() {
           'child_relationship' => $relationship,
           'year_of_birth' => $_POST['age'],
           'address' => $_POST['address'],
-          'sex' => $_POST['user_gender']      
+          'sex' => $_POST['user_gender']
     ), array( 'id' =>   $_SESSION['current_user_id']));
 
   $wpdb->update("a365_asq_results", array(
           'did_at' => $_POST['did_at'],
-          'end_at' => date('Y-m-d H:i:s'),        
+          'end_at' => date('Y-m-d H:i:s'),
     ), array( 'id' =>   $_SESSION['asq_result_id']));
     echo json_encode(["value" => 'ok']);
     wp_die();
@@ -672,11 +672,11 @@ add_action( 'wp_ajax_nopriv_update_no_login_user_info', 'update_no_login_user_in
 function load_data_for_asq_continue($id) {
   global $wpdb;
   $current_user_id = a365_get_current_user_id();
-  $results = $wpdb->get_results( $wpdb->prepare( 
+  $results = $wpdb->get_results( $wpdb->prepare(
      "
       SELECT *
       FROM a365_asq_results
-      WHERE a365_asq_results.id = '%s' 
+      WHERE a365_asq_results.id = '%s'
       "
   , $id
   ), OBJECT );
