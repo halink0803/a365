@@ -92,7 +92,7 @@ $(document).ready(function(){
 
   $('.tinhDiemMchatr').click(function(event) {
     var all_answered = true;
-      $("input:radio").each(function(){
+      $(".question-answer input:radio").each(function(){
         var name = $(this).attr("name");
         if($("input:radio[name="+name+"]:checked").length == 0)
         {
