@@ -1,4 +1,4 @@
-<?php 
+<?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 /**
  * Template Name: Register Child
@@ -23,7 +23,7 @@ get_header('new');
 						</div>
 						<div class="qh-form-row">
 							<label class="qh-label"><span class="align"></span><span class="text"></span></label>
-							
+
 							<div class="input-wrap">
 								<p><i>Nếu trẻ này không có thật, vui lòng đặt tên trẻ là test</i></p>
 							</div>
@@ -31,15 +31,15 @@ get_header('new');
 						<div class="qh-form-row">
 							<label class="qh-label"><span class="align"></span><span class="text">Ngày sinh (Ngày-Tháng-Năm) (*)</span></label>
 							<div class="input-wrap">
-								<input name="dd" type="number" class="qh-form-control iblock" min="1" max="31" required="" placeholder="ngày">
-								<input name="mm" type="number" class="qh-form-control iblock" min="1" max="12" required="" placeholder="tháng">
-								<input name="yyyy" type="number" class="qh-form-control iblock" min="2000" required="" placeholder="năm" style="width:120px"> 
+								<input name="dd" type="number" class="qh-form-control iblock" min="1" max="31" required="" placeholder="ngày" style="width: 120px">
+								<input name="mm" type="number" class="qh-form-control iblock" min="1" max="12" required="" placeholder="tháng" style="width: 120px">
+								<input name="yyyy" type="number" class="qh-form-control iblock" min="2000" required="" placeholder="năm" style="width:120px">
 							</div>
 						</div>
 						<div class="qh-form-row">
 							<label class="qh-label"><span class="align"></span><span class="text">Giới tính (*)</span></label>
 							<div class="input-wrap">
-								<label class="radio-inline"><input type="radio" name="gender" value="Nam" required="">Nam</label> 
+								<label class="radio-inline"><input type="radio" name="gender" value="Nam" required="">Nam</label>
 								<label class="radio-inline"><input type="radio" name="gender" value="Nữ" required="">Nữ</label>
 							</div>
 						</div>
@@ -105,7 +105,7 @@ get_header('new');
 									<option value="8">8. Khác</option>
 								</select>
 							</div>
-						</div> 
+						</div>
 					</div>
 					<div class="qh-form-row">
 						<div class="input-wrap">
@@ -150,7 +150,7 @@ get_header('new');
 	});
 </script>
 
-<?php 
+<?php
 	get_footer('new');
 ?>
 <script type="text/javascript">
@@ -160,7 +160,7 @@ get_header('new');
    				$('#birthage').prop('required',true);
    			}else{
    				$('#birthage').removeAttr('required');
-   			} 
+   			}
 		});
 	});
 </script>
