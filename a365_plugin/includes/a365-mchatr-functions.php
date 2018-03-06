@@ -131,7 +131,7 @@ function mchatr_save_result() {
         }
         wp_redirect($pages[0]->guid, 301);
         exit();
-      } 
+      }
 
       /**
        * Save to database
@@ -271,7 +271,7 @@ function create_nologin_mchatr() {
                     )
                   );
     $asq_set = get_month_test(child_month_age($week_of_birth));
-    
+
      //echo "set: ".$asq_set;
     $_SESSION['asq_set'] = $asq_set;
     $_SESSION['current_user_id'] = $user_id;
@@ -319,7 +319,7 @@ function update_user_information() {
 
       $wpdb->update("a365_mchatr_results", array(
           'dit_at' => $_POST['place'],
-          'end_at' => date('Y-m-d H:i:s'),     
+          'end_at' => date('Y-m-d H:i:s'),
     ), array( 'id' =>   $_SESSION['mchatr_result_id']));
 
       $page_template = 'page-templates/M-ChatR-Result.php';
@@ -344,12 +344,13 @@ function update_no_login_user_information_mchatr() {
           'child_relationship' => $relationship,
           'year_of_birth' => $_POST['age'],
           'address' => $_POST['address'],
-          'sex' => $_POST['user_gender']      
+          'sex' => $_POST['user_gender'],
+          'known_from' => $_POST['source']
     ), array( 'id' =>   $_SESSION['current_user_id']));
 
   $wpdb->update("a365_mchatr_results", array(
           'dit_at' => $_POST['did_at'],
-          'end_at' => date('Y-m-d H:i:s'),        
+          'end_at' => date('Y-m-d H:i:s'),
     ), array( 'id' =>   $_SESSION['mchatr_result_id']));
     echo json_encode(["value" => 'ok']);
     wp_die();

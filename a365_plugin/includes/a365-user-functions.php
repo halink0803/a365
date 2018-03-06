@@ -48,7 +48,7 @@ function a365_get_child_status() {
   global $wpdb;
   // print_r($_SESSION['current_child']);
   $status = $wpdb->get_results($wpdb->prepare("
-    SELECT * 
+    SELECT *
     FROM a365_diagnostic_statuses WHERE child_id = %s
   ", $_SESSION['current_child']->id), OBJECT);
   // print $wpdb->last_query;
@@ -64,7 +64,7 @@ function asq_get_user_info() {
     global $wpdb;
     global $info_user;
     // $current_user = '010000001';
-    $info_usernhậtwpdb->get_results($wpdb->prepare("
+    $info_user = $wpdb->get_results($wpdb->prepare("
     SELECT *
     FROM a365_users where id = %s
     ", $_SESSION['current_user']), OBJECT);
@@ -288,15 +288,15 @@ function a365_change_user_password() {
             );
       $response = array(
         'message' => 'successful'
-      );    
+      );
       echo json_encode($response);
-      wp_die(); 
+      wp_die();
     }
 
     else {
       $response = array(
         'message' => 'fail'
-      );    
+      );
       echo json_encode($response);
       wp_die();
     }
@@ -383,7 +383,7 @@ add_action('init', 'a365_edit_user_information');
  */
 function a365_delete_child() {
   global $wpdb;
-  if(isset($_POST['current_child'])) {    
+  if(isset($_POST['current_child'])) {
     // $wpdb->delete('a365_diagnostic_statuses', array('child_id' => $_POST['current_child']));
     // $wpdb->delete('a365_asq_results', array('child_id' => $_POST['current_child']));
     // $wpdb->delete('a365_mchatrf_results', array('child_id' => $_POST['current_child']));
@@ -392,8 +392,8 @@ function a365_delete_child() {
     //$wpdb->delete('a365_children', array('id' => $_POST['current_child']));
     $response = array(
       'message' => 'delete succes'
-      );    
-    echo json_encode($response);    
+      );
+    echo json_encode($response);
     wp_die();
   }
 }
@@ -412,7 +412,7 @@ function a365_delete_history() {
       case 'ASQ':
         $wpdb->delete('a365_asq_results', array('id' => $_POST['current_history']));
         break;
-      
+
       case "M-CHAT R":
         $wpdb->delete('a365_mchatr_results', array('id' => $_POST['current_history']));
         break;
@@ -433,8 +433,8 @@ function a365_delete_history() {
     }
     $response = array(
       'message' => 'delete succes'
-      );    
-    echo json_encode($response);    
+      );
+    echo json_encode($response);
     wp_die();
   }
 }
@@ -456,11 +456,11 @@ function a365_get_current_child() {
     $_SESSION['current_child'] = $children[0];
 
     $status = $wpdb->get_results($wpdb->prepare("
-      SELECT * 
+      SELECT *
       FROM a365_diagnostic_statuses
       WHERE child_id = %s", $_POST['current_child_id']), OBJECT);
-   
-    echo json_encode(["status" => $status[0]->child_status]);    
+
+    echo json_encode(["status" => $status[0]->child_status]);
     wp_die();
   }
 }
@@ -485,7 +485,7 @@ function a365_get_child_by_id($id) {
  * @return array of child object
  */
 function a365_get_children() {
-  global $wpdb; 
+  global $wpdb;
   $current_user = wp_get_current_user();
 
   $user_email = $current_user->user_email;

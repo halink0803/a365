@@ -655,7 +655,8 @@ function update_no_login_user_information() {
           'child_relationship' => $relationship,
           'year_of_birth' => $_POST['age'],
           'address' => $_POST['address'],
-          'sex' => $_POST['user_gender']
+          'sex' => $_POST['user_gender'],
+          'known_from' => $_POST['source']
     ), array( 'id' =>   $_SESSION['current_user_id']));
 
   $wpdb->update("a365_asq_results", array(

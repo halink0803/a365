@@ -252,10 +252,10 @@ get_header('new');
                 <div class="input-wrap">
                    <select name="source" id="source" class="select_contact qh-form-control" onchange="add_option()">
                       <option value="" style="width:auto">Chọn nguồn</option>
-                      <option value="social networks">Mạng xã hội (facebook)</option>
-                      <option value="internet">Trên internet (tìm kiếm trên Google, đọc báo mạng, ...)</option>
-                      <option value="newspaper">Báo, đài, ti vi, tờ rơi, áp phích</option>
-                      <option value="introduced">Được người khác giới thiệu</option>
+                      <option value="Mạng xã hội">Mạng xã hội (facebook)</option>
+                      <option value="Internet">Trên internet (tìm kiếm trên Google, đọc báo mạng, ...)</option>
+                      <option value="Báo, đài, tivi">Báo, đài, ti vi, tờ rơi, áp phích</option>
+                      <option value="Được giới thiệu">Được người khác giới thiệu</option>
                       <option value="Khác">Khác</option>
                    </select>
                 </div>

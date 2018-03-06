@@ -74,7 +74,7 @@ $records = $obj->getRecords();
             <div class="loading" style="text-align: center; display: none;">
                 <img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAADxiciAvPgo8Yj5XYXJuaW5nPC9iPjogIG15c3FsX3F1ZXJ5KCkgWzxhIGhyZWY9J2Z1bmN0aW9uLm15c3FsLXF1ZXJ5Jz5mdW5jdGlvbi5teXNxbC1xdWVyeTwvYT5dOiBDYW4ndCBjb25uZWN0IHRvIGxvY2FsIE15U1FMIHNlcnZlciB0aHJvdWdoIHNvY2tldCAnL3Zhci9ydW4vbXlzcWxkL215c3FsZC5zb2NrJyAoMikgaW4gPGI+L2hvbWUvYWpheGxvYWQvd3d3L2xpYnJhaXJpZXMvY2xhc3MubXlzcWwucGhwPC9iPiBvbiBsaW5lIDxiPjY4PC9iPjxiciAvPgo8YnIgLz4KPGI+V2FybmluZzwvYj46ICBteXNxbF9xdWVyeSgpIFs8YSBocmVmPSdmdW5jdGlvbi5teXNxbC1xdWVyeSc+ZnVuY3Rpb24ubXlzcWwtcXVlcnk8L2E+XTogQSBsaW5rIHRvIHRoZSBzZXJ2ZXIgY291bGQgbm90IGJlIGVzdGFibGlzaGVkIGluIDxiPi9ob21lL2FqYXhsb2FkL3d3dy9saWJyYWlyaWVzL2NsYXNzLm15c3FsLnBocDwvYj4gb24gbGluZSA8Yj42ODwvYj48YnIgLz4KPGJyIC8+CjxiPldhcm5pbmc8L2I+OiAgbXlzcWxfcXVlcnkoKSBbPGEgaHJlZj0nZnVuY3Rpb24ubXlzcWwtcXVlcnknPmZ1bmN0aW9uLm15c3FsLXF1ZXJ5PC9hPl06IENhbid0IGNvbm5lY3QgdG8gbG9jYWwgTXlTUUwgc2VydmVyIHRocm91Z2ggc29ja2V0ICcvdmFyL3J1bi9teXNxbGQvbXlzcWxkLnNvY2snICgyKSBpbiA8Yj4vaG9tZS9hamF4bG9hZC93d3cvbGlicmFpcmllcy9jbGFzcy5teXNxbC5waHA8L2I+IG9uIGxpbmUgPGI+Njg8L2I+PGJyIC8+CjxiciAvPgo8Yj5XYXJuaW5nPC9iPjogIG15c3FsX3F1ZXJ5KCkgWzxhIGhyZWY9J2Z1bmN0aW9uLm15c3FsLXF1ZXJ5Jz5mdW5jdGlvbi5teXNxbC1xdWVyeTwvYT5dOiBBIGxpbmsgdG8gdGhlIHNlcnZlciBjb3VsZCBub3QgYmUgZXN0YWJsaXNoZWQgaW4gPGI+L2hvbWUvYWpheGxvYWQvd3d3L2xpYnJhaXJpZXMvY2xhc3MubXlzcWwucGhwPC9iPiBvbiBsaW5lIDxiPjY4PC9iPjxiciAvPgo8YnIgLz4KPGI+V2FybmluZzwvYj46ICBteXNxbF9xdWVyeSgpIFs8YSBocmVmPSdmdW5jdGlvbi5teXNxbC1xdWVyeSc+ZnVuY3Rpb24ubXlzcWwtcXVlcnk8L2E+XTogQ2FuJ3QgY29ubmVjdCB0byBsb2NhbCBNeVNRTCBzZXJ2ZXIgdGhyb3VnaCBzb2NrZXQgJy92YXIvcnVuL215c3FsZC9teXNxbGQuc29jaycgKDIpIGluIDxiPi9ob21lL2FqYXhsb2FkL3d3dy9saWJyYWlyaWVzL2NsYXNzLm15c3FsLnBocDwvYj4gb24gbGluZSA8Yj42ODwvYj48YnIgLz4KPGJyIC8+CjxiPldhcm5pbmc8L2I+OiAgbXlzcWxfcXVlcnkoKSBbPGEgaHJlZj0nZnVuY3Rpb24ubXlzcWwtcXVlcnknPmZ1bmN0aW9uLm15c3FsLXF1ZXJ5PC9hPl06IEEgbGluayB0byB0aGUgc2VydmVyIGNvdWxkIG5vdCBiZSBlc3RhYmxpc2hlZCBpbiA8Yj4vaG9tZS9hamF4bG9hZC93d3cvbGlicmFpcmllcy9jbGFzcy5teXNxbC5waHA8L2I+IG9uIGxpbmUgPGI+Njg8L2I+PGJyIC8+Cg==" alt="Loading...">
             </div>
-    <div><b>Danh sách người dùng</b></div> 
+    <div><b>Danh sách người dùng</b></div>
     <table border="0" cellspacing="5" cellpadding="5">
         <tbody>
             <tr>
@@ -105,6 +105,7 @@ $records = $obj->getRecords();
                 <th>Địa chỉ</th>
                 <th>Thời gian sử dụng</th>
                 <th>Số lần đăng nhập</th>
+                <th>Biết đến từ</th>
                 <th>Ngày tạo</th>
             </tr>
         </thead>
@@ -125,13 +126,14 @@ $records = $obj->getRecords();
                 <th>Địa chỉ</th>
                 <th>Thời gian sử dụng</th>
                 <th>Số lần đăng nhập</th>
+                <th>Biết đến từ</th>
                 <th>Ngày tạo</th>
             </tr>
         </tfoot>
 
         <?php
         if(count($records)){
-            $i = 1;    
+            $i = 1;
             foreach($records as $key=>$eachRecord){
         ?>
             <tr id="<?=$eachRecord['id'];?>">
@@ -150,6 +152,7 @@ $records = $obj->getRecords();
                 <td><?=$eachRecord['address'];?></td>
                 <td><?=$eachRecord['using_time'];?></td>
                 <td><?=$eachRecord['number_of_login'];?></td>
+                <td><?=$eachRecord['known_from'];?></td>
                 <td><?=formatDate($eachRecord['created_at'])?></td>
             </tr>
         <?php }
@@ -157,8 +160,8 @@ $records = $obj->getRecords();
         ?>
         </tbody>
     </table>
-    <div><b>Danh sách trẻ quản lý</b></div> 
-    <div id="txtHint"></div>        
+    <div><b>Danh sách trẻ quản lý</b></div>
+    <div id="txtHint"></div>
             </div>
         </div>
 
@@ -173,14 +176,14 @@ $records = $obj->getRecords();
     var children_placeholder = new Array("name","date_of_birth","sex","created_at");
     var inputType = new Array("text","text","text","text","text","text","textarea");
     var table = "tableDemo";
-     
-     // Set button class names 
+
+     // Set button class names
      var savebutton = "ajaxSave";
      var deletebutton = "ajaxDelete";
      var editbutton = "ajaxEdit";
      var updatebutton = "ajaxUpdate";
      var cancelbutton = "cancel";
-     
+
      var saveImage = "<?php echo get_template_directory_uri()."/images/save.png" ?>";
      var editImage = "<?php echo get_template_directory_uri()."/images/edit.png" ?>";
      var deleteImage = "<?php echo get_template_directory_uri()."/images/remove.png" ?>";
@@ -188,12 +191,12 @@ $records = $obj->getRecords();
      var updateImage = "<?php echo get_template_directory_uri()."/images/save.png" ?>";
 
      // Set highlight animation delay (higher the value longer will be the animation)
-     var saveAnimationDelay = 3000; 
+     var saveAnimationDelay = 3000;
      var deleteAnimationDelay = 1000;
-      
+
      // 2 effects available available 1) slide 2) flash
-     var effect = "flash"; 
-  
+     var effect = "flash";
+
   </script>
     <script>
         var child_table;
@@ -204,7 +207,7 @@ $records = $obj->getRecords();
             var title = $(this).text();
             $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
         } );
-     
+
         // DataTable
         pri_table = $('#a365_users_report').DataTable({
         "scrollX": true,
@@ -212,7 +215,7 @@ $records = $obj->getRecords();
         dom: 'BCfrtlip',
         select: true,
         buttons: [
-            
+
             {
                 extend: 'collection',
                 text: 'Xuất dữ liệu',
@@ -251,13 +254,13 @@ $records = $obj->getRecords();
                     },
                 ]
             }
-            
+
         ]
     });
         // Apply the search
         pri_table.columns().every( function () {
             var that = this;
-     
+
             $( 'input', this.footer() ).on( 'keyup change', function () {
                 if ( that.search() !== this.value ) {
                     that
@@ -291,13 +294,13 @@ $records = $obj->getRecords();
             if ( settings.nTable.id == 'a365_children_report' ) {
                 return true;
             }
-            
+
         }
     );
-     
+
     $(document).ready(function() {
         //var table = $('#a365_users').DataTable();
-         
+
         // Event listener to the two range filtering inputs to redraw on input
         $('#min, #max').keyup( function() {
             pri_table.draw();

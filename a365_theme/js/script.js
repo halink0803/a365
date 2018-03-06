@@ -116,6 +116,7 @@ $(document).ready(function(){
               var role_user = $("#role_user").val();
               var gender = $("input[name='user_gender']:checked").val();
               var other_role = $("#UserJobAdd").val();
+              var source = $("#source").val();
               //check empty fields
               if (age == "" || role_user == "" || gender == "" || (role_user == "Khác" && other_role == "")) {
                 $("#notice2").html("Bạn cần điền đầy đủ các trường được đánh dấu (*)!");

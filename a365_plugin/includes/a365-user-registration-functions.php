@@ -57,6 +57,10 @@ function a365_insert_new_users(){
 				$reg_parent_arr['Address'] = $_POST['reg_parent_address'];
 			}
 
+            if(isset($_POST['source'])) {
+                $reg_parent_arr['Source'] = $_POST['source'];
+            }
+
 			if( $_POST['reg_parent_password'] == $_POST['reg_parent_password_check']  && !email_exists($reg_parent_arr['Email']) && $reg_parent_arr['Email'] != ""){
 				$area_order = $wpdb->get_results($wpdb->prepare('
 		        SELECT  user_count
@@ -66,7 +70,7 @@ function a365_insert_new_users(){
 				$user_id =  str_pad($reg_parent_arr['City'], 2, '0', STR_PAD_LEFT) . str_pad($area_order, 7, '0', STR_PAD_LEFT);
 				$wpdb->query(
 					$wpdb->prepare("
-	                  INSERT INTO a365_users (id, area_code, area_order, email, name, type, sex, year_of_birth, child_relationship, occupation, phone, address) VALUES (%s, %d, %d, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+	                  INSERT INTO a365_users (id, area_code, area_order, email, name, type, sex, year_of_birth, child_relationship, occupation, phone, address, known_from) VALUES (%s, %d, %d, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 	            	",
 	                    array(
 	                      $user_id,
@@ -80,7 +84,8 @@ function a365_insert_new_users(){
 	                      $reg_parent_arr['UserRole'],
 	                      $reg_parent_arr['UserJob'],
 	                      $reg_parent_arr['Phone'],
-	                      $reg_parent_arr['Address']
+	                      $reg_parent_arr['Address'],
+                          $reg_parent_arr['Source']
 	                    )
                 	)
                 );
@@ -125,6 +130,10 @@ function a365_insert_new_users(){
 				$reg_officer_arr['City'] = $_POST['reg_officer_city'];
 			}
 
+            if(isset($_POST['source'])) {
+                $reg_officer_arr['Source'] = $_POST['source'];
+            }
+
 			if( $_POST['reg_officer_password'] == $_POST['reg_officer_password_check']  && !email_exists($reg_officer_arr['Email']) && $reg_officer_arr['Email'] != ""){
 				$area_order = $wpdb->get_results($wpdb->prepare('
 		        SELECT  user_count
@@ -134,7 +143,7 @@ function a365_insert_new_users(){
 				$user_id = str_pad($reg_officer_arr['City'], 2, '0', STR_PAD_LEFT) . str_pad($area_order, 7, '0', STR_PAD_LEFT);
 				$wpdb->query(
 					$wpdb->prepare("
-	                  INSERT INTO a365_users (id, area_code, area_order, email, name, type, sex, year_of_birth, occupation, work_place) VALUES (%s, %d, %d, %s, %s, %s, %s, %s, %s, %s)
+	                  INSERT INTO a365_users (id, area_code, area_order, email, name, type, sex, year_of_birth, occupation, work_place, known_from) VALUES (%s, %d, %d, %s, %s, %s, %s, %s, %s, %s, %s)
 	            	",
 	                    array(
 	                      $user_id,
@@ -146,7 +155,8 @@ function a365_insert_new_users(){
 	                      $reg_officer_arr['Gender'],
 	                      $reg_officer_arr['BirthYear'],
 	                      $reg_officer_arr['Job'],
-	                      $reg_officer_arr['WorkingPlace']
+	                      $reg_officer_arr['WorkingPlace'],
+                          $reg_officer_arr['Source']
 	                    )
                 	)
                 );
