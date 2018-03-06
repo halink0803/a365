@@ -18,7 +18,7 @@ get_header('new');
        // sleep
         ajaxindicatorstart('Bạn vui lòng đợi');
         if (document.getElementById("UserSignupForm")) {
-            setTimeout("submitForm()", 5000); // set timout 
+            setTimeout("submitForm()", 5000); // set timout
         }
     }
     $( document ).ready(function() {
@@ -42,8 +42,8 @@ get_header('new');
 	   			$('#UserJobAdd').show(100);
 	   		}
     	});
-   		
-   		
+
+
 	});
 </script>
 
@@ -54,7 +54,7 @@ get_header('new');
     </div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-	   <?php 
+	   <?php
 	   		if(isset($_POST['reg_parent_submit'])){
 		   		if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
 			   		if(isset($_POST['reg_parent_password']) && $_POST['reg_parent_password'] != $_POST['reg_parent_password_check']){
@@ -71,7 +71,7 @@ get_header('new');
 	         <div class="qh-form-row">
 	            <label class="qh-label">
 	            	<span class="align"></span>
-	            	<span class="text">Email (*)</span>  
+	            	<span class="text">Email (*)</span>
 	            </label>
 	            <div class="input-wrap">
 	               <input name="reg_parent_email" class="input_contact qh-form-control" required="required" type="email" id="UserEmail"  />
@@ -79,10 +79,10 @@ get_header('new');
 	         </div>
 	         <div class="qh-form-row">
 	            <label class="qh-label">
-	            	<span class="align"></span> 
+	            	<span class="align"></span>
 	            	<span class="text">Mật khẩu (*)</span> </label class="qh-label">
 	            <div class="input-wrap">
-	               <input name="reg_parent_password" class="input_contact qh-form-control" required="required" type="password" id="User0Password"  />                    
+	               <input name="reg_parent_password" class="input_contact qh-form-control" required="required" type="password" id="User0Password"  />
 	            </div>
 	         </div>
 	         <div class="qh-form-row">
@@ -90,9 +90,9 @@ get_header('new');
 	            	<span class="align"></span>
 	            	<span class="text"> Xác nhận mật khẩu (*)</span> </label>
 	            <div class="input-wrap">
-	               <input name="reg_parent_password_check" required="required" class="input_contact qh-form-control"   type="password" id="User1Password"  />                    
+	               <input name="reg_parent_password_check" required="required" class="input_contact qh-form-control"   type="password" id="User1Password"  />
 	            </div >
-	         </div>    
+	         </div>
 	   </div>
 	   <div class="qh-form-title">Thông tin cá nhân</div>
 	   		<div class="qh-form-row">
@@ -108,7 +108,7 @@ get_header('new');
 	                  <option value="others">Người chăm sóc khác (ghi rõ)</option>
 	               </select>
 	               <input name="reg_parent_job_add" placeholder="Nhập mối quan hệ với trẻ" class="input_contact qh-form-control" type="text" id="UserJobAdd" >
-	               
+
 	            </div>
 	         </div>
 	         <div class="qh-form-row">
@@ -116,17 +116,17 @@ get_header('new');
 	            <span class="align"></span>
 	            <span class="text">Họ và tên (*)</span> </label>
 	            <div class="input-wrap">
-	               <input name="reg_parent_name" class="input_contact qh-form-control" required="required" type="text" id="UserName"  />                    
+	               <input name="reg_parent_name" class="input_contact qh-form-control" required="required" type="text" id="UserName"  />
 	            </div>
 	         </div>
 	         <div class="qh-form-row">
 	            <label class="qh-label">
 	            	<span class="align"></span>
-	            	<span class="text">Năm sinh (*)</span> 
+	            	<span class="text">Năm sinh (*)</span>
 	            </label>
 	            <div class="input-wrap">
 	                  <select name="reg_parent_birth_year" required="required" class="select_contact qh-form-control" id="UserYearYear" >
-	                  	<option value="">--Chọn--</option>	
+	                  	<option value="">--Chọn--</option>
 	                     <option value="1998">1998</option>
 	                     <option value="1997">1997</option>
 	                     <option value="1996">1996</option>
@@ -192,7 +192,7 @@ get_header('new');
 	              <input type="radio" name="reg_parent_gender" id="UserGender1" required="required"  value="Nam" checked  />Nam</label>
 	              <label class="radio-inline">
 	              <input type="radio" name="reg_parent_gender" id="UserGender0" required="required"  value="Nữ"  />Nữ</label>
-	             
+
 	            </div>
 	         </div>
 	         <div class="qh-form-row">
@@ -200,7 +200,7 @@ get_header('new');
 	            	<span class="align"></span>
 	            	<span class="text">Khu vực (*)</span>  </label>
 	            <div class="input-wrap">
-	              	
+
 	               <select name="reg_parent_city" class="select_contact qh-form-control" required="required"  id="UserCity">
 	               		<option value="">--Chọn--</option>
 	               	  	<?php $areas =  a365_get_areas(); ?>
@@ -209,7 +209,7 @@ get_header('new');
                         	<option value="<?php echo $area->area_code ?>"><?php echo $area->name ?></option>
                         <?php endforeach; ?>
 	               </select>
-	               
+
 	            </div>
 	         </div>
 	         <div class="qh-form-row">
@@ -234,7 +234,7 @@ get_header('new');
 						<option value="Cán bộ ngành y như y tá, bác sĩ">Cán bộ ngành y như y tá, bác sĩ</option>
 						<option value="Cán bộ chuyên môn như giáo viên, kỹ sư">Cán bộ chuyên môn như giáo viên, kỹ sư</option>
 						<option value="Khác">Khác</option>
-					</select>                   
+					</select>
 	            </div>
 	         </div>
 	         <div class="qh-form-row">
@@ -242,15 +242,30 @@ get_header('new');
 	            <span class="align"></span>
 	            <span class="text">Địa chỉ</span></label>
 	            <div class="input-wrap">
-	               <input name="reg_parent_address" class="input_contact qh-form-control" type="text" id="UserAddress"/>                    
+	               <input name="reg_parent_address" class="input_contact qh-form-control" type="text" id="UserAddress"/>
 	            </div>
 	         </div>
+            <div class="qh-form-row">
+                <label class="qh-label">
+                   <span class="align"></span><span class="text">Anh/chị biết đến A365 từ nguồn nào? (*)</span>
+                </label>
+                <div class="input-wrap">
+                   <select name="source" id="source" class="select_contact qh-form-control" onchange="add_option()">
+                      <option value="" style="width:auto">Chọn nguồn</option>
+                      <option value="social networks">Mạng xã hội (facebook)</option>
+                      <option value="internet">Trên internet (tìm kiếm trên Google, đọc báo mạng, ...)</option>
+                      <option value="newspaper">Báo, đài, ti vi, tờ rơi, áp phích</option>
+                      <option value="introduced">Được người khác giới thiệu</option>
+                      <option value="Khác">Khác</option>
+                   </select>
+                </div>
+            </div>
 	         <div class="qh-form-row">
 	            <label class="qh-label">
 	            	<span class="align"></span>
 	            	<span class="text">Xác nhận (*)</span></label>
 	            <div class="input-wrap">
-	            	<div class="g-recaptcha" data-sitekey="6Lem_g4UAAAAAJ0DZDu7ArZqjOs_9gMC3NqCIoE4"></div>             
+	            	<div class="g-recaptcha" data-sitekey="6Lem_g4UAAAAAJ0DZDu7ArZqjOs_9gMC3NqCIoE4"></div>
 	            </div>
 	         </div>
 	   <div class="note">
@@ -299,6 +314,6 @@ get_footer('new'); ?>
 		   	elements_2[i].oninput = function(e) {
 		        e.target.setCustomValidity(msg);
 		    };
-		} 
+		}
 	});
 </script>

@@ -14,8 +14,8 @@ get_header('new');
    // sleep
     ajaxindicatorstart('Bạn vui lòng đợi');
     if (document.getElementById("UserSignupForm")) {
-        setTimeout("submitForm()", 5000); // set timout 
-       
+        setTimeout("submitForm()", 5000); // set timout
+
     }
   }
   $( document ).ready(function() {
@@ -29,8 +29,8 @@ get_header('new');
           $('#UserJobAdd').hide(100);
         }
       });
-      
-      
+
+
   });
 
 </script>
@@ -38,13 +38,13 @@ get_header('new');
    <div class="wrapper">
       <div class="title">
          <div class="qh-page-header">
-            Đăng ký tài khoản            
+            Đăng ký tài khoản
          </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           <?php
-            if(isset($_POST['reg_officer_submit'])){ 
+            if(isset($_POST['reg_officer_submit'])){
               if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
                 if(isset($_POST['reg_officer_password']) && isset($_POST['reg_officer_password']) && $_POST['reg_officer_password'] != $_POST['reg_officer_password_check']){
                   echo '<div id="flashMessage" class="error_log">Xác nhận mật khẩu không trùng khớp</div>';
@@ -62,7 +62,7 @@ get_header('new');
                     <span class="align"></span>
                     <span class="text">Email (*)</span></label>
                   <div class="input-wrap">
-                     <input name="reg_officer_email" class="input_contact qh-form-control" required="required" type="email" id="UserEmail"/>                    
+                     <input name="reg_officer_email" class="input_contact qh-form-control" required="required" type="email" id="UserEmail"/>
                   </div>
                </div>
                <div class="qh-form-row">
@@ -70,7 +70,7 @@ get_header('new');
                     <span class="align"></span>
                     <span class="text">Mật khẩu (*)</span></label>
                   <div class="input-wrap">
-                     <input name="reg_officer_password" class="input_contact qh-form-control" required="required" type="password" id="User0Password"/>                    
+                     <input name="reg_officer_password" class="input_contact qh-form-control" required="required" type="password" id="User0Password"/>
                   </div>
                </div>
                <div class="qh-form-row">
@@ -78,24 +78,24 @@ get_header('new');
                     <span class="align"></span>
                     <span class="text">Xác nhận mật khẩu (*)</span></label>
                   <div class="input-wrap">
-                     <input name="reg_officer_password_check" required="required" class="input_contact qh-form-control"   type="password" id="User1Password"/>                    
+                     <input name="reg_officer_password_check" required="required" class="input_contact qh-form-control"   type="password" id="User1Password"/>
                   </div>
                </div>
-               
+
          <div class="qh-form-title">Thông tin cá nhân</div>
                <div class="qh-form-row">
                   <label class="qh-label">
                     <span class="align"></span>
                     <span class="text">Họ và tên (*)</span>  </label>
                   <div class="input-wrap">
-                     <input name="reg_officer_name" class="input_contact qh-form-control" required="required" type="text" id="UserName"/>                    
+                     <input name="reg_officer_name" class="input_contact qh-form-control" required="required" type="text" id="UserName"/>
                   </div>
                </div>
                <div class="qh-form-row">
                   <label class="qh-label">
                     <span class="align"></span>
                     <span class="text">Năm sinh (*)</span>
-                      
+
                   </label>
                   <div class="input-wrap">
                         <select name="reg_officer_birth_year" class="select_contact qh-form-control" id="UserYearYear" required="required" />
@@ -184,7 +184,7 @@ get_header('new');
                <div class="qh-form-row">
                   <label class="qh-label">
                      <span class="align"></span>
-                     <span class="text">Nghề nghiệp (*)</span>   
+                     <span class="text">Nghề nghiệp (*)</span>
                   </label>
                   <div class="input-wrap">
                      <select name="reg_officer_job" rel="/Users/get_hospital" id="job" class="select_contact qh-form-control" required="required">
@@ -205,7 +205,7 @@ get_header('new');
                <div class="qh-form-row">
                   <label class="qh-label">
                     <span class="align"></span>
-                    <span class="text">Nơi công tác</span>  
+                    <span class="text">Nơi công tác</span>
                   </label>
                   <div class="input-wrap">
                      <select name="reg_officer_working_place" rel="/Users/get_hospital_level" id="job_next" class="select_contact qh-form-control">
@@ -224,6 +224,21 @@ get_header('new');
                      </select>
                   </div>
                </div>
+                <div class="qh-form-row">
+                    <label class="qh-label">
+                       <span class="align"></span><span class="text">Anh/chị biết đến A365 từ nguồn nào? (*)</span>
+                    </label>
+                    <div class="input-wrap">
+                       <select name="source" id="source" class="select_contact qh-form-control" onchange="add_option()">
+                          <option value="" style="width:auto">Chọn nguồn</option>
+                          <option value="social networks">Mạng xã hội (facebook)</option>
+                          <option value="internet">Trên internet (tìm kiếm trên Google, đọc báo mạng, ...)</option>
+                          <option value="newspaper">Báo, đài, ti vi, tờ rơi, áp phích</option>
+                          <option value="introduced">Được người khác giới thiệu</option>
+                          <option value="Khác">Khác</option>
+                       </select>
+                    </div>
+                </div>
                <div class="qh-form-row">
                   <label class="qh-label">
                       <span class="align"></span>
@@ -280,6 +295,6 @@ get_header('new');
         elements_2[i].oninput = function(e) {
             e.target.setCustomValidity(msg);
         };
-    } 
+    }
   });
 </script>
