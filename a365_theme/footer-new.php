@@ -442,7 +442,7 @@
 							</div>
 						</div>
                         <div class="qh-form-row">
-                            <label class="qh-label"><span class="align"></span><span class="text">Số điện thoại</span></label>
+                            <label class="qh-label"><span class="align"></span><span class="text">Số điện thoại (*)</span></label>
                             <div class="input-wrap">
                                 <input name="phone" type="text" class="qh-form-control">
                             </div>

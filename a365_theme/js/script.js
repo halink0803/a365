@@ -117,8 +117,9 @@ $(document).ready(function(){
               var gender = $("input[name='user_gender']:checked").val();
               var other_role = $("#UserJobAdd").val();
               var source = $("#source").val();
+              var mobile = $("input[name='phone']").val();
               //check empty fields
-              if (age == "" || role_user == "" || gender == "" || (role_user == "Khác" && other_role == "")) {
+              if (mobile="" || age == "" || role_user == "" || gender == "" || (role_user == "Khác" && other_role == "")) {
                 $("#notice2").html("Bạn cần điền đầy đủ các trường được đánh dấu (*)!");
               } else {
                 $user_info = $("#Get_Result").serialize();
