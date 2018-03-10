@@ -170,8 +170,8 @@ $records = $obj->getRecords();
     </div>
     <script>
      // Column names must be identical to the actual column names in the database, if you dont want to reveal the column names, you can map them with the different names at the server side.
-    var user_columns = new Array("email","name","type","sex","address","phone", "created_at","using_time");
-    var user_placeholder = new Array("email","name","type","sex","address","phone", "created_at","using_time");
+    var user_columns = new Array("email","name","type","sex","address", "created_at","using_time");
+    var user_placeholder = new Array("email","name","type","sex","address", "created_at","using_time");
     var children_columns = new Array("name","date_of_birth","sex","created_at");
     var children_placeholder = new Array("name","date_of_birth","sex","created_at");
     var inputType = new Array("text","text","text","text","text","text","textarea");
