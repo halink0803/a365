@@ -61,7 +61,7 @@ class ajax_table {
   }
 
   function getRecordsForChidrenReport(){
-	$this->res = mysql_query("select a365_children.*, a365_diagnostic_statuses.child_status, a365_users.id as user_id, a365_users.email from a365_children INNER JOIN a365_users ON a365_children.creator_id = a365_users.id LEFT JOIN a365_diagnostic_statuses ON a365_diagnostic_statuses.child_id = a365_children.id");
+	$this->res = mysql_query("select a365_children.*, a365_diagnostic_statuses.child_status, a365_diagnostic_statuses.age_at_diagnose, a365_diagnostic_statuses.diagnosed_at, a365_diagnostic_statuses.diagnosed_by, a365_diagnostic_statuses.diagnosed_on, a365_users.id as user_id, a365_users.email from a365_children INNER JOIN a365_users ON a365_children.creator_id = a365_users.id LEFT JOIN a365_diagnostic_statuses ON a365_diagnostic_statuses.child_id = a365_children.id");
 
 	if(mysql_num_rows($this->res)){
 		while($this->row = mysql_fetch_assoc($this->res)){

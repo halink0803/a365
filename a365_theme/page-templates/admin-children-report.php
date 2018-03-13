@@ -99,6 +99,10 @@ $records = $obj->getRecordsForChidrenReport();
                 <th>Đã làm MCHAT R</th>
                 <th>Đã làm MCHAT R/F</th>
                 <th>Chẩn đoán</th>
+                <th>Tuổi chẩn đoán</th>
+                <th>Nơi chẩn đoán</th>
+                <th>Người chẩn đoán</th>
+                <th>Ngày chẩn đoán</th>
                 <th>Id người dùng</th>
                 <th>Email</th>
             </tr>
@@ -114,6 +118,10 @@ $records = $obj->getRecordsForChidrenReport();
                 <th>Đã làm MCHAT R</th>
                 <th>Đã làm MCHAT R/F</th>
                 <th>Chẩn đoán</th>
+                <th>Tuổi chẩn đoán</th>
+                <th>Nơi chẩn đoán</th>
+                <th>Người chẩn đoán</th>
+                <th>Ngày chẩn đoán</th>
                 <th>Id người dùng</th>
                 <th>Email</th>
             </tr>
@@ -134,6 +142,10 @@ $records = $obj->getRecordsForChidrenReport();
                 <td class="did_MCHAT_R"><?=$eachRecord['did_ASQ'];?></td>
                 <td class="did_MCHAT_RF"><?=$eachRecord['did_ASQ'];?></td>
                 <td class="child_status"><?=$eachRecord['child_status'];?></td>
+                <td class="age_at_diagnose"><?=$eachRecord['age_at_diagnose'];?></td>
+                <td class="diagnosed_at"><?=$eachRecord['diagnosed_at'];?></td>
+                <td class="diagnosed_by"><?=$eachRecord['diagnosed_by'];?></td>
+                <td class="diagnosed_on"><?=$eachRecord['diagnosed_on'];?></td>
                 <td><?=$eachRecord['user_id'];?></td>
                 <td class="email"><?=$eachRecord['email'];?></td>
             </tr>
