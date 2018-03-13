@@ -17,32 +17,31 @@ function formatDate($date) {
 function noToNameDiagnose($no) {
 	switch ($no) {
 		case 1:
-			return "Bác sỹ chuyên khoa Nhi"
+			return "Bác sỹ chuyên khoa Nhi";
 			break;
 		case 2:
-			return "Bác sỹ đa khoa"
+			return "Bác sỹ đa khoa";
 			break;
 		case 3:
-			return "Cán bộ tâm lý"
+			return "Cán bộ tâm lý";
 			break;
 		case 4:
-			return "Bác sỹ chuyên ngành khác"
+			return "Bác sỹ chuyên ngành khác";
 			break;
 		case 5:
-			return "Y tá/ Điều dưỡng"
+			return "Y tá/ Điều dưỡng";
 			break;
 		case 6:
-			return "Giáo viên mầm non"
+			return "Giáo viên mầm non";
 			break;
 		case 7:
-			return "Giáo viên Giáo dục đặc biệt"
+			return "Giáo viên Giáo dục đặc biệt";
 			break;
 		case 8:
-			return "Khác"
+			return "Khác";
 			break;
-
 		default:
-			return "Không xác định"
+			return "Không xác định";
 			break;
 	}
 }
