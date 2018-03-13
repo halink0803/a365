@@ -144,7 +144,7 @@ $records = $obj->getRecordsForChidrenReport();
                 <td class="child_status"><?=$eachRecord['child_status'];?></td>
                 <td class="age_at_diagnose"><?=$eachRecord['age_at_diagnose'];?></td>
                 <td class="diagnosed_at"><?=$eachRecord['diagnosed_at'];?></td>
-                <td class="diagnosed_by"><?=$eachRecord['diagnosed_by'];?></td>
+                <td class="diagnose_by"><?=$eachRecord['diagnose_by'];?></td>
                 <td class="diagnosed_on"><?=$eachRecord['diagnosed_on'];?></td>
                 <td><?=$eachRecord['user_id'];?></td>
                 <td class="email"><?=$eachRecord['email'];?></td>
