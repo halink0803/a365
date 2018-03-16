@@ -98,7 +98,7 @@ else
                         <div class="Mt15"></div>
                         <h3 class="TxtBoldUp fz15" style="color:#ca2535">2. ĐIỂM CỦA TRẺ SAU KHI LÀM SÀNG LỌC NHƯ SAU:</h3>
 
-                        <div style="overflow-x:auto">
+                        <div style="overflow-x:visible">
                             <div class="qh-result-table-view fz14" style="min-width: 740px">
                                 <div class="single-row single-row-head clearfix">
                                     <div class="col col-1st"><div class="text-view"><b>Lĩnh vực</b></div></div>
