@@ -345,7 +345,7 @@ function update_no_login_user_information_mchatr() {
           'year_of_birth' => $_POST['age'],
           'address' => $_POST['address'],
           'sex' => $_POST['user_gender'],
-          'phone' = $_POST['phone'],
+          'phone' => $_POST['phone'],
           'known_from' => $_POST['source']
     ), array( 'id' =>   $_SESSION['current_user_id']));
 
