@@ -330,7 +330,7 @@ $answers[$i++] = $result->answer_28;
 			} else {
 				$("#prv-button-one").addClass("select_hover");
 				page_set++;
-				$('html, body').animate({ scrollTop: 0 }, 'fast');
+				$('.test-tab-container').animate({ scrollTop: 0 }, 'fast');
 			}
 			if (page_set >= page_set_timer_z) {
 				$('#nex-button-one').removeClass("select_hover");
