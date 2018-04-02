@@ -965,6 +965,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     } else {
     $("#prv-button-one").addClass("select_hover");
     page_set++;
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
     }
     if (page_set >= 6) {
     $('#nex-button-one').removeClass("select_hover");

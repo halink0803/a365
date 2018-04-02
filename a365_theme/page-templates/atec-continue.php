@@ -110,7 +110,7 @@ $answers[$i++] = $result->answer_77;
                	<p>
 					<br/>
 					<button type="button" class="btn btn-default" onclick="window.location.href='../quan-ly-tre'" >Trang quản lý trẻ</button>
-					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>            
+					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>
 				</p>
             </div>
         </div>
@@ -131,7 +131,7 @@ $answers[$i++] = $result->answer_77;
 					<option value="">--chọn trẻ--</option>
 					<?php foreach ($autismChild as $value) { ?>
 						<option value="<?=$value->id?>"><?=$value->name?></option>
-					
+
 					<?php } ?>
 				</select>
             </div>
@@ -139,7 +139,7 @@ $answers[$i++] = $result->answer_77;
                	<p>
 					<br/>
 					<button type="button" class="btn btn-default" onclick="lock_sesion_child()" id="save_current_child" >Xác nhận trẻ</button>
-					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>            
+					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>
 				</p>
             </div>
         </div>
@@ -222,15 +222,15 @@ $answers[$i++] = $result->answer_77;
 			<?php $pages = get_pages(array(
 			          'meta_key' => '_wp_page_template',
 			          'meta_value' => 'page-templates/atec_result.php'
-			)); ?> 
-			
+			)); ?>
+
 			<form action="../<?php echo $pages[0]->post_name ?>" onsubmit="return validateForm()" id="TestingManagerBeginTestForm" method="post" accept-charset="utf-8">
 				<div class="tab-content">
 		        	<div class="question" id="box-paing">
 						<script>
 							var numberset = [];
 						</script>
-						<?php 
+						<?php
 							$atec = get_atec_questions();
 						?>
 						<script>
@@ -240,13 +240,13 @@ $answers[$i++] = $result->answer_77;
 							number_quest += <?php echo count($atec[0]) ?>;;
 						</script>
 						<?php
-							
-							$i=0; 
+
+							$i=0;
 							$count =1;
 							foreach ($atec[0] as $atec_question) {
 								echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
 									if( $i==0) {
-										echo 
+										echo
 										'<p class="text-uppercase c-red">Lời nói/ ngôn ngữ/ giao tiếp</p>';
 									}
 									echo '<div class="single-question">';
@@ -282,12 +282,12 @@ $answers[$i++] = $result->answer_77;
 							numberset[1] = <?php echo count($atec[1]) ?>;
 							number_quest += <?php echo count($atec[1]) ?>;
 						</script>
-						<?php 
+						<?php
 							$count =1;
 							foreach ($atec[1] as $atec_question) {
 								echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
 									if( $i==count($atec[0])) {
-										echo 
+										echo
 										'<p class="text-uppercase c-red">Kỹ năng xã hội</p>';
 									}
 									echo '<div class="single-question">';
@@ -322,12 +322,12 @@ $answers[$i++] = $result->answer_77;
 							numberset[2] = <?php echo count($atec[2]) ?>;
 							number_quest += <?php echo count($atec[2]) ?>;
 						</script>
-						<?php 
+						<?php
 							$count =1;
 							foreach ($atec[2] as $atec_question) {
 								echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
 									if( $i==(count($atec[0])+count($atec[1]))) {
-										echo 
+										echo
 										'<p class="text-uppercase c-red">Nhận thức</p>';
 									}
 									echo '<div class="single-question">';
@@ -362,12 +362,12 @@ $answers[$i++] = $result->answer_77;
 							numberset[3] = <?php echo count($atec[3]) ?>;
 							number_quest += <?php echo count($atec[3]) ?>;
 						</script>
-						<?php 
+						<?php
 							$count =1;
 							foreach ($atec[3] as $atec_question) {
 								echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
 									if( $i==(count($atec[0])+count($atec[1])+count($atec[2]))) {
-										echo 
+										echo
 										'<p class="text-uppercase c-red">Sức khỏe/thể chất/hành vi</p>';
 									}
 									echo '<div class="single-question">';
@@ -401,7 +401,7 @@ $answers[$i++] = $result->answer_77;
 							}
 						?>
 						<div class="tab-pane tab-page-control">
-									            
+
 						    <div class="row text-uppercase">
 						      <div class="col-xs-6"><a href="#" id="prv-button-one" class=" qh-btn qh-btn-lg qh-btn-cblue" onclick="prev_page()">Quay lại</a></div>
 						      <div class="col-xs-6 text-right"><a href="#" id="nex-button-one" data-toggle="tab" class=" qh-btn qh-btn-lg qh-btn-blue" onclick="next_page()">Tiếp tục</a></div>
@@ -506,7 +506,7 @@ $answers[$i++] = $result->answer_77;
 			} else {
 				$(".submit_begin").hide();
 				$('#nex-button-one').addClass("select_hover");
-			}		
+			}
 		}
 
 		//next
@@ -515,6 +515,7 @@ $answers[$i++] = $result->answer_77;
 			} else {
 				$("#prv-button-one").addClass("select_hover");
 				page_set++;
+				$('html, body').animate({ scrollTop: 0 }, 'fast');
 			}
 			if (page_set >= page_set_timer_z) {
 				$('#nex-button-one').removeClass("select_hover");
@@ -545,7 +546,7 @@ $answers[$i++] = $result->answer_77;
 			} else {
 				$(".submit_begin").hide();
 				$('#nex-button-one').addClass("select_hover");
-			}			
+			}
 		}
 		// next page
 		function page_tab(page) {

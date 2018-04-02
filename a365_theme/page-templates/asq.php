@@ -970,6 +970,7 @@ Bản quyền đã đăng ký và bản dịch tiếng Việt © 2014 của NXB 
     } else {
     $("#prv-button-one").addClass("select_hover");
     page_set++;
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
     }
     if (page_set >= 6) {
     $('#nex-button-one').removeClass("select_hover");

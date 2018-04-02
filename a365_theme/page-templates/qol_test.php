@@ -43,7 +43,7 @@ if ( $num_autism == 1 )
                	<p>
 					<br/>
 					<button type="button" class="btn btn-default" onclick="window.location.href='../quan-ly-tre'" >Trang quản lý trẻ</button>
-					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>            
+					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>
 				</p>
             </div>
         </div>
@@ -64,7 +64,7 @@ if ( $num_autism == 1 )
 					<option value="">--chọn trẻ--</option>
 					<?php foreach ($autismChild as $value) { ?>
 						<option value="<?=$value->id?>"><?=$value->name?></option>
-					
+
 					<?php } ?>
 				</select>
             </div>
@@ -72,7 +72,7 @@ if ( $num_autism == 1 )
                	<p>
 					<br/>
 					<button type="button" class="btn btn-default" onclick="lock_sesion_child()" id="save_current_child" >Xác nhận trẻ</button>
-					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>            
+					<button type="button" class="btn btn-default" onclick="window.location.href='../'" >Về trang chủ</button>
 				</p>
             </div>
         </div>
@@ -159,15 +159,15 @@ if ( $num_autism == 1 )
 			<?php $pages = get_pages(array(
 			          'meta_key' => '_wp_page_template',
 			          'meta_value' => 'page-templates/qol_result.php'
-			)); ?> 
-			
+			)); ?>
+
 			<form action="<?php echo $pages[0]->guid ?>" onsubmit="return validateForm()" id="TestingManagerBeginTestForm" method="post" accept-charset="utf-8">
 				<div class="tab-content">
 	        		<div class="question" id="box-paing">
 						<script>
 							var numberset = [];
 						</script>
-						<?php 
+						<?php
 							$qol_questions = get_qol_questions();
 						?>
 						<script>
@@ -176,8 +176,8 @@ if ( $num_autism == 1 )
 							numberset[0] = <?php echo count($qol_questions) ?>;
 							number_quest += <?php echo count($qol_questions) ?>;
 						</script>
-						<?php 
-							$i=0; 
+						<?php
+							$i=0;
 							$count = 1;
 							foreach ($qol_questions as $qol_question) {
 								echo '<div class="tab-pane paging_list" id="paging_list'. $i .'">';
@@ -219,7 +219,7 @@ if ( $num_autism == 1 )
 						?>
 
 						<div class="tab-pane tab-page-control">
-						            
+
 						    <div class="row text-uppercase">
 						      <div class="col-xs-6"><a href="#" id="prv-button-one" class=" qh-btn qh-btn-lg qh-btn-cblue" onclick="prev_page()">Quay lại</a></div>
 						      <div class="col-xs-6 text-right"><a href="#" id="nex-button-one" data-toggle="tab" class=" qh-btn qh-btn-lg qh-btn-blue" onclick="next_page()">Tiếp tục</a></div>
@@ -312,7 +312,7 @@ if ( $num_autism == 1 )
 			} else {
 				$(".submit_begin").hide();
 				$('#nex-button-one').addClass("select_hover");
-			}			
+			}
 		}
 		//next
 		function next_page() {
@@ -320,6 +320,7 @@ if ( $num_autism == 1 )
 			} else {
 				$("#prv-button-one").addClass("select_hover");
 				page_set++;
+				$('html, body').animate({ scrollTop: 0 }, 'fast');
 			}
 			if (page_set >= page_set_timer_z) {
 				$('#nex-button-one').removeClass("select_hover");
@@ -349,7 +350,7 @@ if ( $num_autism == 1 )
 			} else {
 				$(".submit_begin").hide();
 				$('#nex-button-one').addClass("select_hover");
-			}			
+			}
 		}
 		// next page
 		function page_tab(page) {
@@ -387,7 +388,7 @@ if ( $num_autism == 1 )
 				$(".submit_begin").show();
 			} else {
 				$(".submit_begin").hide();
-			}			
+			}
 		}
 	</script>
 	<script>
@@ -454,7 +455,7 @@ if ( $num_autism == 1 )
 				}
 			}
 		});
-	}		
+	}
 	var next_quest = true;
 	function load_quest_extra(id, id_complete, zen, zen_true, zen_false) {
 		$("#load_quest").addClass("xample_post_form");
