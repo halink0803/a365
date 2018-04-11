@@ -130,7 +130,7 @@ get_header('new'); ?>
 		// 	}
 		// });
 
-	});
+	 //   });
 
 	   		$.ajaxSetup({cache:false});
 	   		<?php if(isset($_GET["ASQ"])): ?>

@@ -20,40 +20,40 @@ $(document).ready(function(){
 	});
 
 	//handle click bai tap can thiep
-	$(".single-exercise").click(function(){
-       	var title = $('div.title',this).html();
-		//console.log("canthiep_name: "+title);
-		$.ajax({
-			action: 'save_exercise_intervention_view',
-        	type: 'post',
-        	dataType: 'json',
-        	data: { 'exercise_name' : title},
-        	url: a365_ajax.ajax_url,
-			success: function(response){
-			},
-			error: function(){
-				alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
-			}
-		});
+	// $(".single-exercise").click(function(){
+ //       	var title = $('div.title',this).html();
+	// 	//console.log("canthiep_name: "+title);
+	// 	$.ajax({
+	// 		action: 'save_exercise_intervention_view',
+ //        	type: 'post',
+ //        	dataType: 'json',
+ //        	data: { 'exercise_name' : title},
+ //        	url: a365_ajax.ajax_url,
+	// 		success: function(response){
+	// 		},
+	// 		error: function(){
+	// 			alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
+	// 		}
+	// 	});
 
-	});
+	// });
 })
 
 function click_baitapcanthiep() {
 		var title = $('div.title',this).html();
 		//console.log("canthiep_name: "+title);
-		$.ajax({
-			action: 'save_exercise_intervention_view',
-        	type: 'post',
-        	dataType: 'json',
-        	data: { 'exercise_name' : title},
-        	url: a365_ajax.ajax_url,
-			success: function(response){
-			},
-			error: function(){
-				alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
-			}
-		});
+		// $.ajax({
+		// 	action: 'save_exercise_intervention_view',
+  //       	type: 'post',
+  //       	dataType: 'json',
+  //       	data: { 'exercise_name' : title},
+  //       	url: a365_ajax.ajax_url,
+		// 	success: function(response){
+		// 	},
+		// 	error: function(){
+		// 		alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
+		// 	}
+		// });
 }
 
 function lock_sesion_child() {
