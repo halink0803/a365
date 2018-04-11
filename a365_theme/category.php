@@ -21,7 +21,7 @@ get_header('new'); ?>
 			<div class="single-sidebar">
 				<ul class="sidebar-article-menu list-unstyled">
 					<?php
-						
+
             			if ( have_posts() ) :
             				while ( have_posts() ) : the_post();
             				?>
@@ -39,7 +39,7 @@ get_header('new'); ?>
             			$qol_test_link = get_pages(array(
 				          'meta_key' => '_wp_page_template',
 				          'meta_value' => 'page-templates/qol_test.php'
-				     	 ));  
+				     	 ));
 
             			if(get_the_category()[0]->slug == 'ho-tro-tam-ly-cho-cha-me'){
             				echo '<li><a href="'.home_url($qol_test_link[0]->post_name).'">Đánh giá chất lượng sống của cha mẹ</a><i class="fa fa-angle-right"></i></li>';
@@ -49,7 +49,7 @@ get_header('new'); ?>
 				</ul>
 			</div>
 		</div>
-		
+
 		<div class="col-xs-12 col-sm-9">
 			<div class="qh-article-wrap">
 				<div id="single-post-container">
@@ -70,11 +70,11 @@ get_header('new'); ?>
 						$content = apply_filters('the_content', $content);
 						$content = str_replace(']]>', ']]&gt;', $content);
          				echo '<h3 class="post-title">'.$content_post->post_title.'</h3>';
-         				echo '<p class="post-date">Ngày cập nhật: <span>'; 
-         				the_date('d-m-Y'); 
+         				echo '<p class="post-date">Ngày cập nhật: <span>';
+         				the_date('d-m-Y');
          				echo '</span></p>';
 						echo $content;
-						
+
 			            $PhuHuynh = get_post_meta( $my_postid, 'PhuHuynh', true );
 			            $ChuyenGia = get_post_meta( $my_postid, 'ChuyenGia', true );
 			            if( $PhuHuynh) { // kiểm tra xem nó có dữ liệu hay không
@@ -114,30 +114,30 @@ get_header('new'); ?>
 	(function($){
 		$(document).ready(function(){
 
-   		$(".single-exercise").click(function(){
-       	var title = $('div.title',this).html();
-		////console.log("canthiep_name: "+title);
-		$.ajax({
-			action: 'save_exercise_intervention_view',
-        	type: 'post',
-        	dataType: 'json',
-        	data: { 'exercise_name' : title},
-        	url: a365_ajax.ajax_url,
-			success: function(response){
-			},
-			error: function(){
-				alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
-			}
-		});
+  //  		$(".single-exercise").click(function(){
+  //      	var title = $('div.title',this).html();
+		// ////console.log("canthiep_name: "+title);
+		// $.ajax({
+		// 	action: 'save_exercise_intervention_view',
+  //       	type: 'post',
+  //       	dataType: 'json',
+  //       	data: { 'exercise_name' : title},
+  //       	url: a365_ajax.ajax_url,
+		// 	success: function(response){
+		// 	},
+		// 	error: function(){
+		// 		alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
+		// 	}
+		// });
 
 	});
-   		
+
 	   		$.ajaxSetup({cache:false});
 	   		<?php if(isset($_GET["ASQ"])): ?>
 	   			$('.single-sidebar ul li:nth-child(2)').addClass('active');
-	   		<?php elseif(isset($_GET["MChat"]) || isset($_GET["listClinic"]) ): ?>	
+	   		<?php elseif(isset($_GET["MChat"]) || isset($_GET["listClinic"]) ): ?>
 	   			$('.single-sidebar ul li:nth-child(3)').addClass('active');
-   			<?php elseif(isset($_GET["ASQTool"])): ?>	
+   			<?php elseif(isset($_GET["ASQTool"])): ?>
    			$('.single-sidebar ul li:nth-child(5)').addClass('active');
 	   		<?php else: ?>
 	   			$('.single-sidebar ul li:first-child').addClass('active');
@@ -154,5 +154,5 @@ get_header('new'); ?>
 	        });
     	});
 	})(jQuery);
-   	
+
 </script>
