@@ -14,13 +14,15 @@ function a365_contact() {
     //$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
-    $mail->Username = "a365@ccihp.org";
-    $mail->Password = "smartcare";
-    $mail->SetFrom("a365@ccihp.org", "A365");
+    // $mail->Username = "a365@ccihp.org";
+    // $mail->Password = "smartcare";
+    $mail->Username = "support.a365@ccihp.org";
+    $mail->Password = "Smartcare2015";
+    $mail->SetFrom("support.a365@ccihp.org", "A365");
     $mail->Subject = "=?UTF-8?B?".base64_encode($_POST['title'])."?=";
-    $mail->IsHTML(true); 
+    $mail->IsHTML(true);
     $mail->CharSet="UTF-8";
     $mail->AddAddress("support.a365@ccihp.org");
     $mail->msgHTML('
@@ -30,11 +32,11 @@ function a365_contact() {
     ');
     //$data = base64_decode($_POST['data']);
     if(!$mail->Send()) {
-        $response = array('status' => 'fail');   
+        $response = array('status' => 'fail');
         echo json_encode($response);
         wp_die();
     } else {
-        $response = array('status' => 'success');   
+        $response = array('status' => 'success');
         echo json_encode($response);
         wp_die();
     }
