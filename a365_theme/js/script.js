@@ -514,7 +514,7 @@ $(document).ready(function(){
   $(".next_question").click(function() {
     // question_id = $("");
     var all_answered = true;
-    $("input:radio").each(function(){
+    $(".question_options input:radio").each(function(){
       var name = $(this).attr("name");
       if($("input:radio[name="+name+"]:checked").length == 0)
       {
