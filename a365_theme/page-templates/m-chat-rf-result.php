@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                         <div class="answer_test_mchat">
                             <div class="qh-jumbotron mg-b15">
                                 <?php
-                                    echo "<strong>" . $results[0]->conclusion . "</strong>";
+                                    // echo "<strong>" . $results[0]->conclusion . "</strong>";
                                     $message = '';
                                     if( $child_month_age < 24 ) {
                                         $message = ' Bạn nên quay lại website a365.vn sau sinh nhật 2 tuổi của trẻ để thực hiện lại M-CHAT-R/F.';
