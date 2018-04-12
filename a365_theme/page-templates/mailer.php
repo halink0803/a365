@@ -22,9 +22,11 @@ function sendMailASQ() {
     $mail->Port = 587; // or 587
     $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
-    $mail->Username = "a365@ccihp.org";
-    $mail->Password = "smartcare";
-    $mail->SetFrom("a365@ccihp.org", "A365");
+    // $mail->Username = "a365@ccihp.org";
+    // $mail->Password = "smartcare";
+    $mail->Username = "support.a365@ccihp.org";
+    $mail->Password = "Smartcare2015";
+    $mail->SetFrom("support.a365@ccihp.org", "A365");
     $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài sàng lọc ASQ®")."?=";
     $mail->IsHTML(true);
     $mail->MsgHTML( $fields['content'].'<br>'.
@@ -149,9 +151,11 @@ function sendMailMchatR() {
     $mail->Port = 587; // or 587
     $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
-    $mail->Username = "a365@ccihp.org";
-    $mail->Password = "smartcare";
-    $mail->SetFrom("a365@ccihp.org", "A365");
+    // $mail->Username = "a365@ccihp.org";
+    // $mail->Password = "smartcare";
+    $mail->Username = "support.a365@ccihp.org";
+    $mail->Password = "Smartcare2015";
+    $mail->SetFrom("support.a365@ccihp.org", "A365");
     $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài sàng lọc M-CHAT-R")."?=";
     $mail->Body = $fields['content'].'<br>'.
     '<table style="background:#f4f7f9" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#f4f7f9">
@@ -271,9 +275,11 @@ function sendMailMchatRF() {
     $mail->Port = 587; // or 587
     $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
-    $mail->Username = "a365@ccihp.org";
-    $mail->Password = "smartcare";
-    $mail->SetFrom("a365@ccihp.org", "A365");
+    // $mail->Username = "a365@ccihp.org";
+    // $mail->Password = "smartcare";
+    $mail->Username = "support.a365@ccihp.org";
+    $mail->Password = "Smartcare2015";
+    $mail->SetFrom("support.a365@ccihp.org", "A365");
     $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài sàng lọc M-CHAT-R/F")."?=";
     $mail->Body = $fields['content'].'<br>'.
     '<table style="background:#f4f7f9" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#f4f7f9">
@@ -393,9 +399,11 @@ function sendMailQOL() {
     $mail->Port = 587; // or 587
     $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
-    $mail->Username = "a365@ccihp.org";
-    $mail->Password = "smartcare";
-    $mail->SetFrom("a365@ccihp.org", "A365");
+    // $mail->Username = "a365@ccihp.org";
+    // $mail->Password = "smartcare";
+    $mail->Username = "support.a365@ccihp.org";
+    $mail->Password = "Smartcare2015";
+    $mail->SetFrom("support.a365@ccihp.org", "A365");
     $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài khảo sát QOL")."?=";
     $mail->Body = $fields['content'].'<br>'.
     '<table style="background:#f4f7f9" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#f4f7f9">
@@ -514,9 +522,12 @@ function sendMailTheoDoi() {
     $mail->Port = 587; // or 587
     $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
-    $mail->Username = "a365@ccihp.org";
-    $mail->Password = "smartcare";
-    $mail->SetFrom("a365@ccihp.org", "A365");
+    // $mail->Username = "a365@ccihp.org";
+    // $mail->Password = "smartcare";
+    // $mail->SetFrom("a365@ccihp.org", "A365");
+    $mail->Username = "support.a365@ccihp.org";
+    $mail->Password = "Smartcare2015";
+    $mail->SetFrom("support.a365@ccihp.org", "A365");
     $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài Theo dõi hiệu quả can thiệp")."?=";
     $mail->Body = $fields['content'].'<br>'.
     '<table style="background:#f4f7f9" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#f4f7f9">
@@ -635,9 +646,12 @@ function sendMailATEC() {
     $mail->Port = 587; // or 587
     $mail->SMTPSecure = 'tls';
     $mail->IsHTML(true);
-    $mail->Username = "a365@ccihp.org";
-    $mail->Password = "smartcare";
-    $mail->SetFrom("a365@ccihp.org", "A365");
+    // $mail->Username = "a365@ccihp.org";
+    // $mail->Password = "smartcare";
+    // $mail->SetFrom("a365@ccihp.org", "A365");
+    $mail->Username = "support.a365@ccihp.org";
+    $mail->Password = "Smartcare2015";
+    $mail->SetFrom("support.a365@ccihp.org", "A365");
     $mail->Subject = "=?UTF-8?B?".base64_encode("[A365] Kết quả bài khảo sát ATEC")."?=";
     $mail->Body = $fields['content'].'<br>'.
     '<table style="background:#f4f7f9" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#f4f7f9">

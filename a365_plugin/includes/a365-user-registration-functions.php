@@ -271,9 +271,11 @@ function a365_add_new_member() {
 				$mail->Port = 587; // or 587
 				$mail->SMTPSecure = 'tls';
 				$mail->IsHTML(true);
-				$mail->Username = "a365@ccihp.org";
-				$mail->Password = "smartcare";
-				$mail->SetFrom("a365@ccihp.org", "A365");
+				// $mail->Username = "a365@ccihp.org";
+				// $mail->Password = "smartcare";
+			    $mail->Username = "support.a365@ccihp.org";
+    			$mail->Password = "Smartcare2015";
+				$mail->SetFrom("support.a365@ccihp.org", "A365");
 				$mail->AddAddress($user_email);
 				$mail->Subject = "=?UTF-8?B?".base64_encode("[A365.vn] Kích hoạt tài khoản")."?=";
 				$mail->Body = '
