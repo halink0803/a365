@@ -41,7 +41,7 @@
 			success: function(response){
 			},
 			error: function(){
-				alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
+				// alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
 			}
 		});
 

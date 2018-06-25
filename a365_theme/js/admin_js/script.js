@@ -656,7 +656,7 @@ ajax = function (params,action,table_id){
 		  }
 		},
 		error: function(){
-			alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
+			// alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
 		}
 		// error: function(xhr, error, data){
 		// 	alert("Đã có lỗi xảy ra! Xin vui lòng thử lại.");
