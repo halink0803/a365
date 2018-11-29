@@ -192,13 +192,6 @@
 								<input name="fullname" id="fullname" type="text" class="qh-form-control">
 							</div>
 						</div>
-						<div class="qh-form-row" style="margin: 0">
-							<label class="qh-label"><span class="align"></span><span class="text"></span></label>
-
-							<div class="input-wrap">
-								<p style="margin: 0"><i>Nếu trẻ này không có thật, vui lòng đặt tên trẻ là test</i></p>
-							</div>
-						</div>
 						<div class="qh-form-row">
 							<label class="qh-label"><span class="align"></span><span class="text">Ngày sinh (*)</span></label>
 							<div class="input-wrap">

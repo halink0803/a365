@@ -22,13 +22,6 @@ get_header('new');
 							</div>
 						</div>
 						<div class="qh-form-row">
-							<label class="qh-label"><span class="align"></span><span class="text"></span></label>
-
-							<div class="input-wrap">
-								<p><i>Nếu trẻ này không có thật, vui lòng đặt tên trẻ là test</i></p>
-							</div>
-						</div>
-						<div class="qh-form-row">
 							<label class="qh-label"><span class="align"></span><span class="text">Ngày sinh (Ngày-Tháng-Năm) (*)</span></label>
 							<div class="input-wrap">
 								<input name="dd" type="number" class="qh-form-control iblock" min="1" max="31" required="" placeholder="ngày" style="width: 120px">
